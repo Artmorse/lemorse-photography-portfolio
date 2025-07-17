@@ -1,0 +1,13 @@
+version: "3"
+services:
+  imgproxy:
+    image: ghcr.io/imgproxy/imgproxy:v3.29.1
+    ports:
+      - "8080:8080"
+    environment:
+      # https://docs.imgproxy.net/configuration/options#IMGPROXY_LOCAL_FILESYSTEM_ROOT
+      - IMGPROXY_LOCAL_FILESYSTEM_ROOT=/mnt/images
+      # https://docs.imgproxy.net/configuration/options#IMGPROXY_USE_ETAG
+      - IMGPROXY_USE_ETAG=true
+    volumes:
+      - ~/Pictures/lemorse-photos:/mnt/images:ro
