@@ -14,7 +14,7 @@
                 <a href="{{ .RelPermalink }}">
                     <strong>{{ .Params.french_name }}</strong>
                     <br/>
-                    {{ $img := partial "imgproxy.html" (dict "filename" $filename) }}
+                    {{ $img := partial "imgproxy.html" (dict "filename" $filename "width" 150) }}
                     <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
                 </a>
             </li>

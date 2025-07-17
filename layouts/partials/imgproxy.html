@@ -1,3 +1,5 @@
 {{- $filename := .filename -}}
+{{- $width := or .width 0 -}}
+{{- $height := or .height 0 -}}
 {{- $base := site.Params.imgproxy_base -}}
-{{- printf "%s/insecure/rs:fit:150:0/plain/local:///%s" $base $filename | safeURL -}}
+{{- printf "%s/insecure/rs:fit:%d:%d/plain/local:///%s" $base $width $height $filename | safeURL -}}
