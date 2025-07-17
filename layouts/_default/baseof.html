@@ -1,0 +1,21 @@
+{{ $favicon := resources.Get "lemorse.ico" }}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+    <link rel="icon" href="{{ "lemorse.ico" | relURL }}" type="image/x-icon">
+    {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body>
+    <header>LeMorse Photography</header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>My Site Footer</footer>
+</body>
+</html>

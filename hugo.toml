@@ -1,3 +1,9 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://lemorsephotography.tech/'
+languageCode = 'fr-FR'
+title = 'LeMorsePhotography'
+
+[taxonomies]
+    species = "species"
+
+[params]
+    imgproxy_base = "http://localhost:8080"

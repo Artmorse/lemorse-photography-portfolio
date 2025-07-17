@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
+{{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
+{{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
+
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.emoji }}</p>
+        <p title="Nom vernaculaire">{{ .Params.french_name }}</p>
+        <p title="Nom scientifique">{{ .Params.scientific_name }}</p>
+
+        <div class="mosaic">
+            {{ range $sortedMatchingPhotos }}
+                {{ $filename := .Params.filename }}
+                {{ $img := partial "imgproxy.html" (dict "filename" $filename) }}
+                <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
+            {{ end }}
+        </div>
+    </article>
+{{ end }}

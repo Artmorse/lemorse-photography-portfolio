@@ -1,0 +1,3 @@
+{{- $filename := .filename -}}
+{{- $base := site.Params.imgproxy_base -}}
+{{- printf "%s/insecure/rs:fit:150:0/plain/local:///%s" $base $filename | safeURL -}}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
+
+<h1>{{ .Title }}</h1>
+<ul>
+    {{ range .RegularPages }}
+        {{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
+        {{ if gt (len $matchingPhotos) 0 }}
+            {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
+            {{ $photo := index $sortedMatchingPhotos 0 }}
+            {{ $filename := $photo.Params.filename }}
+            <li>
+                <a href="{{ .RelPermalink }}">
+                    <strong>{{ .Params.french_name }}</strong>
+                    <br/>
+                    {{ $img := partial "imgproxy.html" (dict "filename" $filename) }}
+                    <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
+                </a>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>
+{{ end }}

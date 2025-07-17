@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+.mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mosaic img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
