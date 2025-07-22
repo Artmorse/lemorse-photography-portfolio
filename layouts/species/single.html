@@ -10,19 +10,12 @@
         <p title="Nom vernaculaire">{{ .Params.french_name }}</p>
         <p title="Nom scientifique">{{ .Params.scientific_name }}</p>
 
-        <div class="mosaic">
+        <div id="my-justified-gallery">
             {{ range $index, $photo := $sortedMatchingPhotos }}
-                {{ $img := partial "imgproxy.html" (dict "filename" $photo.Params.filename "width" 150) }}
+                {{ $img := partial "imgproxy.html" (dict "filename" $photo.Params.signed_filename "width" 150) }}
                 <a href="#img{{ $index }}">
                     <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
                 </a>
-
-                <!-- Zoom modal -->
-                <div id="img{{ $index }}" class="zoom-modal">
-                    <a href="#" style="position:absolute;top:20px;right:30px;font-size:2em;color:white;text-decoration:none;">&times;</a>
-                    {{ $img := partial "imgproxy.html" (dict "filename" $photo.Params.filename) }}
-                    <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
-                </div>
 
             {{ end }}
         </div>

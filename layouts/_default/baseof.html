@@ -7,7 +7,8 @@
     <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
     <link rel="icon" href="{{ "lemorse.ico" | relURL }}" type="image/x-icon">
     {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}"><!-- In the <head> tag -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
 </head>
 <body>
     <header>LeMorse Photography</header>
@@ -17,5 +18,16 @@
     </main>
 
     <footer>My Site Footer</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            $('#my-justified-gallery').justifiedGallery({
+                rowHeight: 250,
+                margins: 1,
+                captions: false
+            });
+        });
+    </script>
 </body>
 </html>
