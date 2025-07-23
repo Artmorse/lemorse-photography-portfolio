@@ -17,22 +17,21 @@ body, html {
 .footer-menu {
     background-color: white;
     color: black;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     z-index: 1000;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin-right: 40px;
-    margin-left: 40px;
+    max-width: 90%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .footer-brand {
@@ -41,16 +40,23 @@ body, html {
     gap: 10px;
     font-family: 'Gentrice Story';
     font-size: 3rem;
+    margin-left: 3rem;
 }
 
 .footer-logo {
+    padding-left: 0.25rem;
     height: 3rem;
     width: auto;
+}
+
+.footer-nav {
+    margin-left: 3rem;
 }
 
 .footer-nav ul {
     list-style: none;
     display: flex;
+    flex-grow: 1;
     gap: 2rem;
     margin: 0;
     padding: 0;
@@ -69,6 +75,7 @@ body, html {
 .footer-social {
     display: flex;
     gap: 1rem;
+    margin-left: auto;  /* align to left */
 }
 
 .footer-social img {
