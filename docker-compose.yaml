@@ -9,5 +9,9 @@ services:
       - IMGPROXY_LOCAL_FILESYSTEM_ROOT=/mnt/images
       # https://docs.imgproxy.net/configuration/options#IMGPROXY_USE_ETAG
       - IMGPROXY_USE_ETAG=true
+      # https://docs.imgproxy.net/configuration/options#IMGPROXY_JPEG_PROGRESSIVE
+      - IMGPROXY_JPEG_PROGRESSIVE=true
+      # https://docs.imgproxy.net/configuration/options#IMGPROXY_FORMAT_QUALITY
+      # - IMGPROXY_FORMAT_QUALITY=jpeg=70
     volumes:
-      - ~/Pictures/lemorse-photos:/mnt/images:ro
+      - ~/Pictures/_ignored-by-restic/lemorse-photos:/mnt/images:ro
