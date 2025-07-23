@@ -5,18 +5,15 @@
 {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
 
     <article>
-        <h1>{{ .Title }}</h1>
-        <p>{{ .Params.emoji }}</p>
-        <p title="Nom vernaculaire">{{ .Params.french_name }}</p>
-        <p title="Nom scientifique">{{ .Params.scientific_name }}</p>
+        <h1>{{ .Params.french_name }}</h1>
+        <h3>{{ .Params.scientific_name }}</h3>
 
         <div id="my-justified-gallery">
-            {{ range $index, $photo := $sortedMatchingPhotos }}
-                {{ $img := partial "imgproxy.html" (dict "filename" $photo.Params.signed_filename "width" 150) }}
-                <a href="#img{{ $index }}">
-                    <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
-                </a>
-
+            {{ range $photo := $sortedMatchingPhotos }}
+                {{ partial "imagecontainer.html" (dict
+                    "filename" $photo.Params.signed_filename
+                    "alt"  $photo.Params.french_name
+                ) }}
             {{ end }}
         </div>
     </article>

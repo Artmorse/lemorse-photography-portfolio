@@ -9,10 +9,12 @@
         {{ if gt (len $matchingPhotos) 0 }}
             {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
             {{ $photo := index $sortedMatchingPhotos 0 }}
-            {{ $filename := $photo.Params.original_filename }}
             <a href="{{ .RelPermalink }}">
-                {{ $img := partial "imgproxy.html" (dict "filename" $photo.Params.signed_filename "width" 600) }}
-                <img src="{{ $img }}" alt="{{ .Params.french_name }}" loading="lazy">
+                {{ partial "imagecontainer.html" (dict
+                    "filename" $photo.Params.signed_filename
+                    "alt"      .Params.french_name
+                    "caption"  .Params.french_name
+                ) }}
             </a>
         {{ end }}
     {{ end }}

@@ -1,3 +1,110 @@
-body {
+@font-face {
+    font-family: "Gentrice Story";
+    src: 
+        url("/fonts/GentriceStory.woff2") format('woff2'),
+        url("/fonts/GentriceStory.ttf") format("truetype");
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
+}
+
+
+
+.footer-menu {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gentrice Story';
+    font-size: 3rem;
+}
+
+.footer-logo {
+    height: 3rem;
+    width: auto;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease;
+}
+
+.footer-social a:hover img {
+    opacity: 0.6;
+}
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border-top-right-radius: 10px;
 }
