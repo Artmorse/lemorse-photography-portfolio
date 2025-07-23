@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1 class="title">{{ .Title }}</h1>
+<div>
+    <ul>
+    {{ range .RegularPages }}
+        <li>
+            <a href="{{ .RelPermalink }}">
+                {{ partial "inline-location.html" (slice
+                    .Params.sublocation
+                    .Params.city
+                    .Params.department
+                    .Params.region
+                    .Params.country
+                ) }}
+            </a>
+        </li>
+    {{ end }}
+    </ul>
+</div>
+
+{{ end }}

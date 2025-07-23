@@ -1,0 +1,9 @@
+{{- $filename := .filename -}}
+{{- $alt := .alt -}}
+{{- $caption := .caption -}}
+{{- $id := .id -}}
+<div class="image-container">
+    {{ $img := partial "img-proxy.html" (dict "filename" $filename "width" 800) }}
+    <img src="{{ $img }}" alt="{{ $alt }}" loading="lazy" data-id="{{ $id }}">
+    <div class="caption">{{ $caption }}</div>
+</div>

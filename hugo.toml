@@ -4,6 +4,7 @@ title = 'LeMorsePhotography'
 
 [taxonomies]
     species = "species"
+    locations = "locations"
 
 [params]
     imgproxy_base = "http://localhost:8080"

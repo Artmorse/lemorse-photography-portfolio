@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
-{{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
+{{ $matchingPhotos := where $allPhotos "Params.location_id" "eq" .Params.id }}
 {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
 
 <article>

@@ -10,10 +10,11 @@
             {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
             {{ $photo := index $sortedMatchingPhotos 0 }}
             <a href="{{ .RelPermalink }}">
-                {{ partial "imagecontainer.html" (dict
+                {{ partial "image-container.html" (dict
                     "filename" $photo.Params.signed_filename
                     "alt"      .Params.french_name
                     "caption"  .Params.french_name
+                    "id" $photo.Params.id
                 ) }}
             </a>
         {{ end }}
