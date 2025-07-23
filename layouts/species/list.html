@@ -2,7 +2,7 @@
 
 {{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
 
-<h1>{{ .Title }}</h1>
+<h1 class="title">{{ .Title }}</h1>
 <div id="my-justified-gallery">
     {{ range .RegularPages }}
         {{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
@@ -19,4 +19,5 @@
         {{ end }}
     {{ end }}
 </div>
+
 {{ end }}

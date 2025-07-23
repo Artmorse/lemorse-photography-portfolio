@@ -1,3 +1,3 @@
 ---
-title: Species overview
+title: Species
 ---
