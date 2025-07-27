@@ -4,13 +4,21 @@
 {{ $matchingPhotos := where $allPhotos "Params.location_id" "eq" .Params.id }}
 {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
 
+{{ $allSpecies := where .Site.RegularPages "Section" "species" }}
+$allSpecies
+
 <article>
     <h1 class="title">{{ .Params.scientific_name }}</h1>
     <div id="my-justified-gallery">
         {{ range $photo := $sortedMatchingPhotos }}
+
+            {{ $matchingSpecies := where $allSpecies "Params.id" "eq" $photo.Params.species_id }}
+            {{ $firstMatchingSpecies := index $matchingSpecies 0 }}
+
             {{ partial "image-container.html" (dict
                 "filename" $photo.Params.signed_filename
-                "alt"  $photo.Params.french_name
+                "alt"      $firstMatchingSpecies.Params.french_name
+                "caption"  $firstMatchingSpecies.Params.french_name
                 "id" $photo.Params.id
             ) }}
         {{ end }}
