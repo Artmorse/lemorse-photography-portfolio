@@ -1,0 +1,21 @@
+---
+id: 125
+original_filename: "P3311109.JPG"
+signed_filename: "P3311109-retouched-signed.JPG"
+species_id: 132
+species_gender: "na"
+location_id: 2
+photo_subject: "wildlife"
+shooting_technique: "macro"
+date: "2024-03-31"
+camera: "Olympus OM-1"
+camera_manufacturer: "OM System"
+lens: "Olympus M.Zuiko Digital ED 60mm f/2.8 Macro"
+exposure_time: "1/40s"
+f_number: "f11.0"
+iso: "ISO 1000"
+focal_length: "60mm"
+orientation: "Portrait"
+dominant_color_hexa: "#ad9e92"
+dominant_color_hue: 0.0741
+---
