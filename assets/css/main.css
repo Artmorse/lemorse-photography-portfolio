@@ -49,6 +49,7 @@ body, html {
 
 .footer-nav {
     margin-left: 3rem;
+    text-transform: uppercase;
 }
 
 .footer-nav ul {
@@ -73,7 +74,7 @@ body, html {
 .footer-social {
     display: flex;
     gap: 1rem;
-    margin-left: auto;  /* align to left */
+    margin-left: auto;  /* align to right */
 }
 
 .footer-social img {
@@ -117,4 +118,54 @@ body, html {
 .title {
     text-align: center;
     margin: 2.5rem;
+}
+
+.footer-language {
+    margin-left: 3rem;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown .dropdown-toggle {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.language-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+    margin-bottom: 4px;
+    padding: 0;
+    list-style: none;
+}
+
+.language-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.language-dropdown .dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #333;
+    gap: 8px;
+}
+
+.language-dropdown .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
 }

@@ -1,6 +1,53 @@
 baseURL = 'https://lemorsephotography.tech/'
-languageCode = 'fr-FR'
 title = 'LeMorsePhotography'
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
+[languages]
+    [languages.fr]
+        languageName = "Français"
+        weight = 1
+        contentDir = 'content/fr'
+        [languages.fr.menu]
+            [[languages.fr.menu.main]]
+                identifier = "species"
+                name = "Espèces"
+                url = "/fr/species"
+                weight = 1
+            [[languages.fr.menu.main]]
+                identifier = "locations"
+                name = "Lieux"
+                url = "/fr/locations"
+                weight = 2
+    [languages.en]
+        languageName = "English"
+        weight = 2
+        contentDir = 'content/en'
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                identifier = "species"
+                name = "Species"
+                url = "/en/species"
+                weight = 1
+            [[languages.en.menu.main]]
+                identifier = "locations"
+                name = "Locations"
+                url = "/en/locations"
+                weight = 2
+    [languages.es]
+        languageName = "Español"
+        weight = 3
+        contentDir = 'content/es'
+        [languages.es.menu]
+            [[languages.es.menu.main]]
+                identifier = "species"
+                name = "Especies"
+                url = "/es/species"
+                weight = 1
+            [[languages.es.menu.main]]
+                identifier = "locations"
+                name = "Lugares"
+                url = "/es/locations"
+                weight = 2
 
 [taxonomies]
     species = "species"

@@ -1,0 +1,8 @@
+{{ $currentURL := trim .RelPermalink "/" }}
+
+{{ range .Site.Menus.main }}
+    {{ $URL := trim .URL "/" }}
+    {{ if eq $URL $currentURL }}
+        {{ .Name }}
+    {{ end }}
+{{ end }}

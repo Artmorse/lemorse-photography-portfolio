@@ -1,5 +1,6 @@
 <meta charset="UTF-8" />
-<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+<title>{{ block "title" . }}{{ partial "get-menu-name.html" . }}
+{{ end }}</title>
 <link rel="icon" href="{{ "lemorse.ico" | relURL }}" type="image/x-icon">
 
 {{ $style := resources.Get "css/main.css" | minify | fingerprint }}

@@ -1,17 +1,17 @@
 {{ define "main" }}
 
-{{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
-{{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
-{{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
+{{ $allPhotos := site.Data.photos }}
+{{ $matchingPhotos := where $allPhotos ".species_id" "eq" .Params.id }}
+{{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }}
 
 <article>
-    <h1 class="title">{{ .Params.scientific_name }}</h1>
+    <h1 class="title">{{ .Params.name }} ({{ .Params.scientific_name }})</h1>
     <div id="my-justified-gallery">
         {{ range $photo := $sortedMatchingPhotos }}
             {{ partial "image-container.html" (dict
-                "filename" $photo.Params.signed_filename
-                "alt"  $photo.Params.french_name
-                "id" $photo.Params.id
+                "filename" $photo.signed_filename
+                "alt"  .Params.name
+                "id" $photo.id
             ) }}
         {{ end }}
     </div>

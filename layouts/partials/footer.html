@@ -6,8 +6,9 @@
 
     <nav class="footer-nav">
         <ul>
-            <li><a href="/species">Species</a></li>
-            <li><a href="/locations">Locations</a></li>
+            {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
         </ul>
     </nav>
 
@@ -19,5 +20,9 @@
         <a href="https://www.facebook.com/61555846563827" target="_blank" aria-label="Facebook">
             <img src="/icons/facebook.svg" alt="Facebook" />
         </a>
+    </div>
+
+    <div class="footer-language">
+        {{ partial "language-switcher.html" . }}
     </div>
 </div>

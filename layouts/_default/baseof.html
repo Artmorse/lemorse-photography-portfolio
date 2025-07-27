@@ -26,5 +26,22 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdown = document.getElementById("languageDropdown");
+            const toggle = dropdown.querySelector(".dropdown-toggle");
+
+            toggle.addEventListener("click", function (e) {
+            e.stopPropagation(); // prevent click bubbling
+            dropdown.classList.toggle("open");
+            });
+
+            // Close the dropdown when clicking outside
+            document.addEventListener("click", function () {
+            dropdown.classList.remove("open");
+            });
+        });
+    </script>
+
 </body>
 </html>

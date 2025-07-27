@@ -1,25 +1,32 @@
 {{ define "main" }}
 
-{{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
-{{ $matchingPhotos := where $allPhotos "Params.location_id" "eq" .Params.id }}
-{{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
+{{ $allPhotos := site.Data.photos }}
+{{ $matchingPhotos := where $allPhotos ".location_id" "eq" .Params.id }}
+{{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }}
 
 {{ $allSpecies := where .Site.RegularPages "Section" "species" }}
-$allSpecies
 
 <article>
-    <h1 class="title">{{ .Params.scientific_name }}</h1>
+    <h1 class="title">
+        {{ partial "inline-location.html" (slice
+            .Params.sublocation
+            .Params.city
+            .Params.department
+            .Params.region
+            .Params.country
+        ) }}
+    </h1>
     <div id="my-justified-gallery">
         {{ range $photo := $sortedMatchingPhotos }}
 
-            {{ $matchingSpecies := where $allSpecies "Params.id" "eq" $photo.Params.species_id }}
+            {{ $matchingSpecies := where $allSpecies "Params.id" "eq" $photo.species_id }}
             {{ $firstMatchingSpecies := index $matchingSpecies 0 }}
 
             {{ partial "image-container.html" (dict
-                "filename" $photo.Params.signed_filename
-                "alt"      $firstMatchingSpecies.Params.french_name
-                "caption"  $firstMatchingSpecies.Params.french_name
-                "id" $photo.Params.id
+                "filename" $photo.signed_filename
+                "alt"      $firstMatchingSpecies.Params.name
+                "caption"  $firstMatchingSpecies.Params.name
+                "id"       $photo.id
             ) }}
         {{ end }}
     </div>
