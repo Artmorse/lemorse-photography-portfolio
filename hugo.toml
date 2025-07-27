@@ -2,6 +2,8 @@ baseURL = 'https://lemorsephotography.tech/'
 title = 'LeMorsePhotography'
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
+copyright = '© 2025 Arthur CARON'
+
 [languages]
     [languages.fr]
         languageName = "Français"
@@ -55,3 +57,4 @@ defaultContentLanguageInSubdir = true
 
 [params]
     imgproxy_base = "http://localhost:8080"
+    linkedin_url = "https://www.linkedin.com/in/arthur-caron-lemomorse"
