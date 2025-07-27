@@ -1,23 +1,32 @@
 {{ define "main" }}
 
 {{ $allPhotos := where .Site.RegularPages "Section" "photos" }}
+{{ $speciesList := slice }}
+
+{{ range .RegularPages }}
+    {{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
+    {{ if gt (len $matchingPhotos) 0 }}
+        {{ $randomIndex := mod (now.UnixNano | int) (len $matchingPhotos) }}
+        {{ $randomPhoto := index $matchingPhotos $randomIndex }}
+        {{ $speciesList = $speciesList | append (dict "species" . "photo" $randomPhoto) }}
+    {{ end }}
+{{ end }}
+
+{{ $sortedSpeciesList := sort $speciesList "photo.Params.dominant_color_hue" "asc" }}
 
 <h1 class="title">{{ .Title }}</h1>
 <div id="my-justified-gallery">
-    {{ range .RegularPages }}
-        {{ $matchingPhotos := where $allPhotos "Params.species_id" "eq" .Params.id }}
-        {{ if gt (len $matchingPhotos) 0 }}
-            {{ $sortedMatchingPhotos := sort $matchingPhotos "Params.date" "asc" }}
-            {{ $photo := index $sortedMatchingPhotos 0 }}
-            <a href="{{ .RelPermalink }}">
-                {{ partial "image-container.html" (dict
-                    "filename" $photo.Params.signed_filename
-                    "alt"      .Params.french_name
-                    "caption"  .Params.french_name
-                    "id" $photo.Params.id
-                ) }}
-            </a>
-        {{ end }}
+    {{ range $sortedSpeciesList }}
+        {{ $species := .species }}
+        {{ $photo := .photo }}
+        <a href="{{ $species.RelPermalink }}">
+            {{ partial "image-container.html" (dict
+                "filename" $photo.Params.signed_filename
+                "alt"      $species.Params.french_name
+                "caption"  $species.Params.french_name
+                "id"       $photo.Params.id
+            ) }}
+        </a>
     {{ end }}
 </div>
 
