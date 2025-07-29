@@ -56,5 +56,5 @@ copyright = '© 2025 Arthur CARON'
     locations = "locations"
 
 [params]
-    imgproxy_base = "http://localhost:8080"
+    imgproxy_baseurl = "http://localhost:8080"
     linkedin_url = "https://www.linkedin.com/in/arthur-caron-lemomorse"
