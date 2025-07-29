@@ -1,0 +1,6 @@
+---
+id: 43
+scientific_name: "Larus argentatus"
+emoji: "bird"
+name: "Gaviota Argéntea Europea"
+---
