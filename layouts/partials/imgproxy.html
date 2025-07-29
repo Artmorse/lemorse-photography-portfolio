@@ -1,5 +1,5 @@
 {{- $filename := .filename -}}
 {{- $width := or .width 0 -}}
 {{- $height := or .height 0 -}}
-{{- $base := site.Params.imgproxy_baseurl -}}
-{{- printf "%s/insecure/rs:fit:%d:%d/plain/local:///%s" $base $width $height $filename | safeURL -}}
+{{ $imgproxy_baseurl := getenv "HUGO_PARAMS_IMGPROXY_BASEURL" | default .Site.Params.imgproxy_baseurl }}
+{{- printf "%s/insecure/rs:fit:%d:%d/plain/local:///%s" $imgproxy_baseurl $width $height $filename | safeURL -}}
