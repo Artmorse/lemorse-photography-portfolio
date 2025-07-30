@@ -52,7 +52,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_PARAMS_IMGPROXY_BASEURL: "https://imgproxy.lemomorse.tech"
+          HUGO_PARAMS_IMGPROXY_BASEURL: "http://imgproxy.lemomorse.tech"
         run: |
           hugo \
             --minify \
