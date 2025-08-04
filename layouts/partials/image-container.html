@@ -3,7 +3,7 @@
 {{- $caption := .caption -}}
 {{- $id := .id -}}
 <div class="image-container">
-    {{ $img := partial "imgproxy.html" (dict "filename" $filename "width" 800) }}
-    <img src="{{ $img }}" alt="{{ $alt }}" loading="lazy" data-id="{{ $id }}">
+    {{ $url := partial "imgproxy.html" (dict "filename" $filename "width" 800) }}
+    <img src="{{ $url }}" alt="{{ $alt }}" loading="lazy" data-id="{{ $id }}">
     <div class="caption">{{ $caption }}</div>
 </div>
