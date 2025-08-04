@@ -51,12 +51,11 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-          HUGO_PARAMS_IMGPROXY_BASEURL: "https://imgproxy.lemomorse.tech"
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --environment production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

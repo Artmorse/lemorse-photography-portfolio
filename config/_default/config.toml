@@ -55,6 +55,6 @@ copyright = '© 2025 Arthur CARON'
     species = "species"
     locations = "locations"
 
+# default params value
 [params]
-    imgproxy_baseurl = "http://localhost:8080"
     linkedin_url = "https://www.linkedin.com/in/arthur-caron-lemomorse"
