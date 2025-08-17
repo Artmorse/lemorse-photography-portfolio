@@ -1,12 +1,16 @@
+{{ define "title" }}
+{{ partial "title.html" . }}
+{{ end }}
+
 {{ define "main" }}
 
-<h1 class="title">{{ partial "get-menu-name.html" . }}</h1>
+<h1 class="title">{{ partial "title.html" . }}</h1>
 <div>
     <ul>
     {{ range where (where (where .Site.AllPages "Lang" "fr") "Section" "locations") "Kind" "page" }}
         <li>
             <a href="{{ .RelPermalink }}">
-                {{ partial "inline-location.html" (slice
+                {{ partial "locations/inline.html" (slice
                     .Params.sublocation
                     .Params.city
                     .Params.department

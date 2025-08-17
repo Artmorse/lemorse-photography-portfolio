@@ -1,0 +1,8 @@
+{{ $title := partial "locations/inline.html" (slice
+            .Params.sublocation
+            .Params.city
+            .Params.department
+            .Params.region
+            .Params.country
+        ) }}
+{{- $title -}}

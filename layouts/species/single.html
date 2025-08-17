@@ -1,3 +1,8 @@
+{{ define "title" }}
+{{ partial "species/title.html" . }}
+{{ end }}
+
+
 {{ define "main" }}
 
 {{ $allPhotos := site.Data.photos }}
@@ -5,7 +10,7 @@
 {{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }}
 
 <article>
-    <h1 class="title">{{ .Params.name }} ({{ .Params.scientific_name }})</h1>
+    <h1 class="title">{{ partial "species/title.html" . }}</h1>
     <div id="my-justified-gallery">
         {{ range $photo := $sortedMatchingPhotos }}
             {{ partial "image-container.html" (dict

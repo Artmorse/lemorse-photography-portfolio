@@ -1,9 +1,0 @@
-<meta charset="UTF-8" />
-<title>{{ block "title" . }}{{ partial "get-menu-name.html" . }}
-{{ end }}</title>
-<link rel="icon" href="{{ "lemorse.ico" | relURL }}" type="image/x-icon">
-
-{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
