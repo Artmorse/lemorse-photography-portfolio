@@ -1,6 +1,6 @@
 ---
 id: 41
-sublocation: "Salines de Montgofre (Salinas de Mongofra)"
+sublocation: "Salines de Montgofre"
 city: "Port d'Addaia"
 department: "Minorque"
 region: "Îles Baléares"

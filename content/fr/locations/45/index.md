@@ -1,7 +1,7 @@
 ---
 id: 45
-sublocation: "Puy de sancy"
-city: ""
+sublocation: "Puy de Sancy"
+city: null
 department: "Puy-de-dôme"
 region: "Auvergne-Rhône-Alpes"
 country: "France"

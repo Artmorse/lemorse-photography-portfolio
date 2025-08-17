@@ -2,7 +2,7 @@
 id: 42
 sublocation: null
 city: "Barcelone"
-department: null
+department: "Barcelone"
 region: "Catalogne"
 country: "Espagne"
 latitude: 41.3825802

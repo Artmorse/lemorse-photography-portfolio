@@ -1,6 +1,6 @@
 ---
 id: 47
-sublocation: ""
+sublocation: null
 city: "Les baux-de-provence"
 department: "Bouches-du-Rhône"
 region: "Provence-Alpes-Côte d'Azur"

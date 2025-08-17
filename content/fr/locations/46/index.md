@@ -1,7 +1,7 @@
 ---
 id: 46
 sublocation: "Belle-île-en-mer"
-city: ""
+city: null
 department: "Morbihan"
 region: "Bretagne"
 country: "France"

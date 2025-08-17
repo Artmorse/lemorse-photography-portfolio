@@ -1,6 +1,6 @@
 ---
 id: 36
-sublocation: "Saône"
+sublocation: "La Saône"
 city: "Écuelles"
 department: "Saône-et-Loire"
 region: "Bourgogne-Franche-Comté"
