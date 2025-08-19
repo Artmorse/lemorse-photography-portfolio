@@ -184,3 +184,92 @@ footer {
 .footer-copyright a:hover {
     text-decoration: underline;
 }
+
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.publication {
+    display: flex;
+    gap: 20px;
+}
+.publication.reverse {
+    flex-direction: row-reverse;
+}
+
+.publication-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    align-items: flex-start;
+    flex: 6;
+}
+
+.publication-carousel {
+    padding: 0.5rem;
+}
+
+.glider-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.glider {
+    height: 100%;
+}
+
+/* This targets each slide (Glider creates them automatically) */
+.glider > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Make sure each slide fills the container */
+}
+
+.glider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.carousel .glider-prev,
+.carousel .glider-next {
+  /* Your custom styles */
+    background: rgb(165, 165, 165);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.carousel .glider-prev {
+    left: 10px;
+}
+
+.carousel .glider-next {
+    right: 10px;
+}
+
+.glider-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.glider-dot.active {
+    background: #454545 !important;
+}

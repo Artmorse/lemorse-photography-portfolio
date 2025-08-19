@@ -12,6 +12,7 @@
     {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.css">
 </head>
 <body>
     <main>
@@ -25,6 +26,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             $('#my-justified-gallery').justifiedGallery({
@@ -50,6 +52,6 @@
             });
         });
     </script>
-
+    {{ block "scripts" . }}{{ end }}
 </body>
 </html>

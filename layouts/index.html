@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<div class="publications">
+
+    {{ $publications := sort .Site.Data.publications "published_at" "desc" }}
+    {{ $lastPublications := first 3 $publications }}
+
+    {{ $photos := .Site.Data.photos }}
+
+    {{ range $i, $publication := $lastPublications }}
+        {{ $publicationPhotos := where $photos "id" "in" $publication.photo_ids }}
+
+        <div class="publication {{ if modBool $i 2 }}reverse{{ end }}">
+            <div class="publication-details">
+                <h3>{{ $publication.published_at }}</h3>
+                <!-- <p>{{ $publication.description }}</p> -->
+                <p>
+                    🦅<br/>
+                    Percnoptère d'Égypte 🇫🇷<br/>
+                    Neophron percnopterus ⚗️<br/>
+                    Egyptian Vulture 🇬🇧<br/>
+                    Alimoche Común 🇪🇸<br/>
+                    <br/>
+                    🗺️ Minorque, Îles Baléares, Espagne<br/>
+                    📅 Avril 2025<br/>
+                    <br/>
+                    📷 Olympus OM-1<br/>
+                    🔭 OM System M.Zuiko Digital ED 150‑400mm f/4.5 TC1.25X IS PRO<br/>
+                    <br/>
+                    #percnopteredegypte #neophronpercnopterus #egyptianvulture #alimochecomun #birdofprey #birdofpreyphotography #wildlife #wildlifephotography #omsystem #olympusom1 #omsystemwildlife #omsystemphotographer #omsystemwildlifephotographer #omsystemphotography #omsystemwildlifephotography #omsystemfr #omsystemfrance
+                </p>
+            </div>
+
+            <div class="publication-carousel">
+                <div class="glider-container">
+                    <div class="glider">
+                        {{ range $publicationPhotos }}
+                            {{ $url := partial "imgproxy.html" (dict "filename" .signed_filename "width" 600) }}
+                            <img src="{{ $url }}" loading="lazy" data-id="{{ .id }}"/>
+                        {{ end }}
+                    </div>
+                    <button aria-label="Previous" class="glider-prev">«</button>
+                    <button aria-label="Next" class="glider-next">»</button>
+                </div>
+
+                <div role="tablist" class="dots"></div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
+{{ end }}
+
+
+{{ define "scripts" }}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".publication-carousel").forEach(carousel => {
+            const gliderEl = carousel.querySelector(".glider");
+            const prev = carousel.querySelector(".glider-prev");
+            const next = carousel.querySelector(".glider-next");
+            const dots = carousel.querySelector(".dots");
+
+            new Glider(gliderEl, {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable: false,
+                dots: dots,
+                arrows: {
+                    prev: prev,
+                    next: next
+                }
+            });
+        });
+    });
+</script>
+{{ end }}
