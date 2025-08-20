@@ -223,7 +223,7 @@ footer {
     flex-direction: row-reverse;
 }
 
-.publication-details {
+.publication .details {
     display: flex;
     flex-direction: column;
     justify-content: center; /* vertical centering */
@@ -234,7 +234,12 @@ footer {
     flex: 6;
 }
 
-.publication-carousel {
+.publication .details .content p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.publication .carousel {
     padding: 0.5rem;
 }
 
@@ -268,18 +273,19 @@ footer {
 
 .carousel .glider-prev,
 .carousel .glider-next {
-  /* Your custom styles */
-    background: rgb(165, 165, 165);
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
-    padding: 10px 15px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 1;
     border-radius: 50%;
+    /* Vertical alignment */
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* glow effect */
 }
 
 .carousel .glider-prev {
@@ -289,6 +295,7 @@ footer {
 .carousel .glider-next {
     right: 10px;
 }
+
 
 .glider-dots {
     text-align: center;

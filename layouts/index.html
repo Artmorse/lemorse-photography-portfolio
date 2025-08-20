@@ -7,18 +7,19 @@
 
 <div class="publications">
 
-    {{ $publications := sort .Site.Data.publications "published_at" "desc" }}
+    {{ $publications := where .Site.AllPages "Section" "publications" }}
+    {{ $publications = where $publications "Lang" "fr" }}
+    {{ $publications = sort $publications "Params.published_at" "desc" }}
     {{ $lastPublications := first 3 $publications }}
 
     {{ $photos := .Site.Data.photos }}
 
     {{ range $i, $publication := $lastPublications }}
-        {{ $publicationPhotos := where $photos "id" "in" $publication.photo_ids }}
+        {{ $publicationPhotos := where $photos "id" "in" $publication.Params.photo_ids }}
 
         <div class="publication {{ if modBool $i 2 }}reverse{{ end }}">
             <div class="publication-details">
-                <h3>{{ $publication.published_at }}</h3>
-                <!-- <p>{{ $publication.description }}</p> -->
+                <h3>{{ $publication.Params.published_at }}</h3>
                 <p>
                     🦅<br/>
                     Percnoptère d'Égypte 🇫🇷<br/>

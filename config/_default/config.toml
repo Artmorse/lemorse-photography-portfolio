@@ -20,6 +20,11 @@ copyright = '© 2025 Arthur CARON'
                 name = "Lieux"
                 url = "/fr/locations"
                 weight = 2
+            [[languages.fr.menu.main]]
+                identifier = "publications"
+                name = "Publications"
+                url = "/fr/publications"
+                weight = 3
     [languages.en]
         languageName = "English"
         weight = 2
@@ -35,6 +40,11 @@ copyright = '© 2025 Arthur CARON'
                 name = "Locations"
                 url = "/en/locations"
                 weight = 2
+            [[languages.en.menu.main]]
+                identifier = "publications"
+                name = "Posts"
+                url = "/en/publications"
+                weight = 3
     [languages.es]
         languageName = "Español"
         weight = 3
@@ -50,10 +60,16 @@ copyright = '© 2025 Arthur CARON'
                 name = "Lugares"
                 url = "/es/locations"
                 weight = 2
+            [[languages.es.menu.main]]
+                identifier = "publications"
+                name = "Publicaciones"
+                url = "/es/publications"
+                weight = 3
 
 [taxonomies]
     species = "species"
     locations = "locations"
+    publications = "publications"
 
 # default params value
 [params]
