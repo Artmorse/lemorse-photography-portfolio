@@ -1,6 +1,7 @@
 ---
 id: 95
 scientific_name: "Calidris alpina"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Correlimos común"
 ---

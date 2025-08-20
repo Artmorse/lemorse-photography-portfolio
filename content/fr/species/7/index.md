@@ -1,6 +1,7 @@
 ---
 id: 7
 scientific_name: "Ardea alba"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Grande Aigrette"
 ---

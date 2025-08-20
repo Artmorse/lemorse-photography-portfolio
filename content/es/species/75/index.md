@@ -1,6 +1,7 @@
 ---
 id: 75
 scientific_name: "Sciurus vulgaris"
-emoji: "squirrel"
+type: "squirrel"
+emoji: "🐿️"
 name: "Ardilla roja"
 ---

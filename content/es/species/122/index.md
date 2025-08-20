@@ -1,6 +1,7 @@
 ---
 id: 122
 scientific_name: "Anthus pratensis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Bisbita Pratense"
 ---

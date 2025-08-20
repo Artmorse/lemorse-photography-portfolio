@@ -1,6 +1,7 @@
 ---
 id: 40
 scientific_name: "Halichoerus grypus"
-emoji: "seal"
+type: "seal"
+emoji: "🦭"
 name: "Phoque gris"
 ---

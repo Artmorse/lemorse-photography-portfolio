@@ -1,6 +1,7 @@
 ---
 id: 30
 scientific_name: "Emberiza schoeniclus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Reed Bunting"
 ---

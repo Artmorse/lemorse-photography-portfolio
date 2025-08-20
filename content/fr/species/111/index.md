@@ -1,6 +1,7 @@
 ---
 id: 111
 scientific_name: "Netta rufina"
-emoji: "duck"
+type: "duck"
+emoji: "🦆"
 name: "Nette rousse"
 ---

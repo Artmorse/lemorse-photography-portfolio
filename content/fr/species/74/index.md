@@ -1,6 +1,7 @@
 ---
 id: 74
 scientific_name: "Saxicola rubicola"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Tarier pâtre"
 ---

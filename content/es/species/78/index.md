@@ -1,6 +1,7 @@
 ---
 id: 78
 scientific_name: "Tachybaptus ruficollis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: ""
 ---

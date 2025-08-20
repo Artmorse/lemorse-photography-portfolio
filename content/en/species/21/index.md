@@ -1,6 +1,7 @@
 ---
 id: 21
 scientific_name: "Chroicocephalus ridibundus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Black-headed Gull"
 ---

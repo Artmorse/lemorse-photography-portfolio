@@ -1,6 +1,7 @@
 ---
 id: 38
 scientific_name: "Gyps fulvus"
-emoji: "birdofprey"
+type: "birdofprey"
+emoji: "🦅"
 name: "Vautour fauve"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 123
 scientific_name: "Oenanthe hispanica"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Western Black-eared Wheatear"
 ---

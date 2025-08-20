@@ -1,6 +1,7 @@
 ---
 id: 91
 scientific_name: "Hieraaetus pennatus"
-emoji: "birdofprey"
+type: "birdofprey"
+emoji: "🦅"
 name: "Águila Calzada"
 ---

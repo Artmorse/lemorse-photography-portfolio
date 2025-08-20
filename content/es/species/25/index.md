@@ -1,6 +1,7 @@
 ---
 id: 25
 scientific_name: "Curruca melanocephala"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: ""
 ---

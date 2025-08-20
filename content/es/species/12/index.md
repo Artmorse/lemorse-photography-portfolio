@@ -1,6 +1,7 @@
 ---
 id: 12
 scientific_name: "Aythya ferina"
-emoji: "duck"
+type: "duck"
+emoji: "🦆"
 name: ""
 ---

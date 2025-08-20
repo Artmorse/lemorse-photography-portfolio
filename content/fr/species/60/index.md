@@ -1,6 +1,7 @@
 ---
 id: 60
 scientific_name: "Pardosa palustris"
-emoji: "spider"
+type: "spider"
+emoji: "🕷️"
 name: "Araignée loup"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 16
 scientific_name: "Calliptamus italicus"
-emoji: "cricket"
+type: "cricket"
+emoji: "🦗"
 name: "Caloptène italien"
 ---

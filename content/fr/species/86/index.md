@@ -1,6 +1,7 @@
 ---
 id: 86
 scientific_name: "Turdus torquatus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Merle à plastron"
 ---

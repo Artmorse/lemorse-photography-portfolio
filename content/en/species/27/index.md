@@ -1,6 +1,7 @@
 ---
 id: 27
 scientific_name: "Dendrocopos major"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Great spotted woodpecker"
 ---

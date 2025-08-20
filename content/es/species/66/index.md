@@ -1,6 +1,7 @@
 ---
 id: 66
 scientific_name: "Phoenicurus ochruros"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Colirrojo tizón"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 58
 scientific_name: "Ovis gmelinii"
-emoji: "goat"
+type: "goat"
+emoji: "🐐"
 name: ""
 ---

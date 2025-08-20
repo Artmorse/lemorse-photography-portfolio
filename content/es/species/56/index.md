@@ -1,6 +1,7 @@
 ---
 id: 56
 scientific_name: "Ondatra zibethicus"
-emoji: "rat"
+type: "rat"
+emoji: "🐀"
 name: "Rata almizclera"
 ---

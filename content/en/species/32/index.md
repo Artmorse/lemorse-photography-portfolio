@@ -1,6 +1,7 @@
 ---
 id: 32
 scientific_name: "Falco tinnunculus"
-emoji: "birdofprey"
+type: "birdofprey"
+emoji: "🦅"
 name: "Common kestrel"
 ---

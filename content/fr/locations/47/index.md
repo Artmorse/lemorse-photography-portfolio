@@ -1,7 +1,7 @@
 ---
 id: 47
 sublocation: null
-city: "Les baux-de-provence"
+city: "Les Baux-de-Provence"
 department: "Bouches-du-Rhône"
 region: "Provence-Alpes-Côte d'Azur"
 country: "France"

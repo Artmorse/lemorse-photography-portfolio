@@ -1,6 +1,7 @@
 ---
 id: 96
 scientific_name: "Nycticorax nycticorax"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Bihoreau gris"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 15
 scientific_name: "Calidris alba"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Sanderling"
 ---

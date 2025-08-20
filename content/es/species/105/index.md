@@ -1,6 +1,7 @@
 ---
 id: 105
 scientific_name: "Phoenicurus phoenicurus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Colirrojo Real"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 28
 scientific_name: "Egretta garzetta"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Aigrette garzette"
 ---

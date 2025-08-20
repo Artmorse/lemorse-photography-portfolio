@@ -1,6 +1,7 @@
 ---
 id: 29
 scientific_name: "Emberiza calandra"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Bruant proyer"
 ---

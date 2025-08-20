@@ -1,6 +1,7 @@
 ---
 id: 81
 scientific_name: "Tichodroma muraria"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Wallcreeper"
 ---

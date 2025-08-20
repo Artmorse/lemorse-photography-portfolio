@@ -1,6 +1,7 @@
 ---
 id: 126
 scientific_name: "Hirundo rustica"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Golondrina Común"
 ---

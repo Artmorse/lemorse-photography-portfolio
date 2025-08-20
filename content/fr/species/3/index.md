@@ -1,6 +1,7 @@
 ---
 id: 3
 scientific_name: "Aeshna cyanea"
-emoji: "dragonfly"
+type: "dragonfly"
+emoji: "🪰"
 name: "Aeschne bleue"
 ---

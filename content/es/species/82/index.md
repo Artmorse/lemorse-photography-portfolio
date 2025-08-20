@@ -1,6 +1,7 @@
 ---
 id: 82
 scientific_name: "Tringa ochropus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Andarríos Grande"
 ---

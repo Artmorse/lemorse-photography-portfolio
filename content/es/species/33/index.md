@@ -1,6 +1,7 @@
 ---
 id: 33
 scientific_name: "Fratercula arctica"
-emoji: "penguin"
+type: "penguin"
+emoji: "🐧"
 name: "Frailecillo Atlántico"
 ---

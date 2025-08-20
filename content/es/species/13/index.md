@@ -1,6 +1,7 @@
 ---
 id: 13
 scientific_name: "Bos taurus"
-emoji: "cow"
+type: "cow"
+emoji: "🐄"
 name: "Vaca"
 ---

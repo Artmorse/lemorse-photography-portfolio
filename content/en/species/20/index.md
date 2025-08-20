@@ -1,6 +1,7 @@
 ---
 id: 20
 scientific_name: "Cervus elaphus"
-emoji: "deer"
+type: "deer"
+emoji: "🦌"
 name: "Red deer"
 ---

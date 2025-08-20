@@ -1,6 +1,7 @@
 ---
 id: 129
 scientific_name: "Araneae"
-emoji: "spider"
+type: "spider"
+emoji: "🕷️"
 name: "Arañas"
 ---

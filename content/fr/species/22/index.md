@@ -1,6 +1,7 @@
 ---
 id: 22
 scientific_name: "Cinclus cinclus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Cincle plongeur"
 ---

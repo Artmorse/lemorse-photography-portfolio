@@ -1,6 +1,7 @@
 ---
 id: 52
 scientific_name: "Musca domestica"
-emoji: "fly"
+type: "fly"
+emoji: "🪰"
 name: "Mouche domestique"
 ---

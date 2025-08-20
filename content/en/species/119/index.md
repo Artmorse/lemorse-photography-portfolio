@@ -1,6 +1,7 @@
 ---
 id: 119
 scientific_name: "Lathyrus clymenum"
-emoji: "flower"
+type: "flower"
+emoji: "🌸"
 name: "Spanish vetchling"
 ---

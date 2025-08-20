@@ -1,6 +1,7 @@
 ---
 id: 41
 scientific_name: "Hemaris fuciformis"
-emoji: "butterfly"
+type: "butterfly"
+emoji: "🦋"
 name: "Esfinge abejorro de orla ancha"
 ---

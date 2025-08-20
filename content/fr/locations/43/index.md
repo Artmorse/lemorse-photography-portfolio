@@ -1,6 +1,6 @@
 ---
 id: 43
-sublocation: "Basses gorges du verdon"
+sublocation: "Basses gorges du Verdon"
 city: "Quinson"
 department: "Alpes-de-Haute-Provence"
 region: "Provence-Alpes-Côte d'Azur"

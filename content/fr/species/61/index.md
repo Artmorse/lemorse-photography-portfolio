@@ -1,6 +1,7 @@
 ---
 id: 61
 scientific_name: "Pelophylax lessonae"
-emoji: "frog"
+type: "frog"
+emoji: "🐸"
 name: "Petite grenouille verte d'Europe"
 ---

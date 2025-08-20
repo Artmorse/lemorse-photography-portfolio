@@ -1,6 +1,7 @@
 ---
 id: 79
 scientific_name: "Tachypodoiulus niger"
-emoji: "bug"
+type: "bug"
+emoji: "🐛"
 name: ""
 ---

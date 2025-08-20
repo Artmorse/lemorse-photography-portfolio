@@ -1,6 +1,7 @@
 ---
 id: 48
 scientific_name: "Thomisidae"
-emoji: "spider"
+type: "spider"
+emoji: "🕷️"
 name: "Arañas cangrejo"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 73
 scientific_name: "Rupicapra pyrenaica"
-emoji: "goat"
+type: "goat"
+emoji: "🐐"
 name: "Isard"
 ---

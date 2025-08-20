@@ -1,6 +1,7 @@
 ---
 id: 26
 scientific_name: "Cygnus olor"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Cygne tuberculé"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 76
 scientific_name: "Sitta europaea"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Trepador Azul"
 ---

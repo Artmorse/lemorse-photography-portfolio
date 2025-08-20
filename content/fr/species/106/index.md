@@ -1,6 +1,7 @@
 ---
 id: 106
 scientific_name: "Ichthyaetus audouinii"
-emoji: "seagull"
+type: "seagull"
+emoji: "🐦"
 name: "Goéland d'Audouin"
 ---

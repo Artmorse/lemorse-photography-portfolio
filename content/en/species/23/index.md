@@ -1,6 +1,7 @@
 ---
 id: 23
 scientific_name: "Corvus corone"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Carrion crow"
 ---

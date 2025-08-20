@@ -1,6 +1,6 @@
 ---
 id: 4
-sublocation: "Baumettes"
+sublocation: "Les Baumettes"
 city: "Marseille"
 department: "Bouches-du-Rhône"
 region: "Provence-Alpes-Côte d'Azur"

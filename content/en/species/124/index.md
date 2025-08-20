@@ -1,6 +1,7 @@
 ---
 id: 124
 scientific_name: "Capra ibex"
-emoji: "goat"
+type: "goat"
+emoji: "🐐"
 name: "Alpine ibex"
 ---

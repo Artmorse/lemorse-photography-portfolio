@@ -1,6 +1,7 @@
 ---
 id: 127
 scientific_name: "Ptyonoprogne rupestris"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Eurasian Crag-Martin"
 ---

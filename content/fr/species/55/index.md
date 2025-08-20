@@ -1,6 +1,7 @@
 ---
 id: 55
 scientific_name: "Sparassidae"
-emoji: "spider"
+type: "spider"
+emoji: "🕷️"
 name: "Araignée crabe géant"
 ---

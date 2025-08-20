@@ -1,6 +1,7 @@
 ---
 id: 99
 scientific_name: "Alauda arvensis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Eurasian skylark"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 51
 scientific_name: "Motacilla cinerea"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Lavandera cascadeña"
 ---

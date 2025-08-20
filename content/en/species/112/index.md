@@ -1,6 +1,7 @@
 ---
 id: 112
 scientific_name: "Coloeus monedula"
-emoji: "raven"
+type: "raven"
+emoji: "🐦‍⬛"
 name: "Eurasian Jackdaw"
 ---

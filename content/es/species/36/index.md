@@ -1,6 +1,7 @@
 ---
 id: 36
 scientific_name: "Gulosus aristotelis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Cormorán Moñudo"
 ---

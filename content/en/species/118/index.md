@@ -1,6 +1,7 @@
 ---
 id: 118
 scientific_name: "Ophrys lutea"
-emoji: "orchid"
+type: "orchid"
+emoji: "🌸"
 name: "Yellow bee-orchid"
 ---

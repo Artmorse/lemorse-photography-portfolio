@@ -1,6 +1,7 @@
 ---
 id: 65
 scientific_name: "Phoenicopterus roseus"
-emoji: "flamingo"
+type: "flamingo"
+emoji: "🦩"
 name: "Greater flamingo"
 ---

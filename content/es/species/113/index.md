@@ -1,6 +1,7 @@
 ---
 id: 113
 scientific_name: "Corvus corax"
-emoji: "raven"
+type: "raven"
+emoji: "🐦‍⬛"
 name: "Cuervo Grande"
 ---

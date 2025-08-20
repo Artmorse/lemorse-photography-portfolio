@@ -1,6 +1,7 @@
 ---
 id: 100
 scientific_name: "Ciconia ciconia"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Cigüeña blanca"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 47
 scientific_name: "Macroglossum stellatarum"
-emoji: "butterfly"
+type: "butterfly"
+emoji: "🦋"
 name: "Esfinge colibrí"
 ---

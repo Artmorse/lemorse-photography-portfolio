@@ -1,6 +1,7 @@
 ---
 id: 50
 scientific_name: "Motacilla alba"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "White Wagtail"
 ---

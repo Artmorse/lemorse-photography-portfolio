@@ -1,6 +1,7 @@
 ---
 id: 46
 scientific_name: "Lophophanes cristatus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: ""
 ---

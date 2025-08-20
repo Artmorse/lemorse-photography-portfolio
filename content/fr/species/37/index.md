@@ -1,6 +1,7 @@
 ---
 id: 37
 scientific_name: "Gypaetus barbatus"
-emoji: "birdofprey"
+type: "birdofprey"
+emoji: "🦅"
 name: "Gypaète barbu"
 ---

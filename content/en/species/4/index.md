@@ -1,6 +1,7 @@
 ---
 id: 4
 scientific_name: "Alcedo atthis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Common kingfisher"
 ---

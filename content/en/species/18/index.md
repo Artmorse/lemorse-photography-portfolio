@@ -1,6 +1,7 @@
 ---
 id: 18
 scientific_name: "Caucasotachea vindobonensis"
-emoji: "snail"
+type: "snail"
+emoji: "🐌"
 name: "Snail"
 ---

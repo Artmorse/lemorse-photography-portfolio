@@ -1,6 +1,7 @@
 ---
 id: 71
 scientific_name: "Rana temporaria"
-emoji: "frog"
+type: "frog"
+emoji: "🐸"
 name: "Grenouille rousse"
 ---

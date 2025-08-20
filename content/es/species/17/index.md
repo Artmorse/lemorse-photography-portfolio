@@ -1,6 +1,7 @@
 ---
 id: 17
 scientific_name: "Capreolus capreolus"
-emoji: "deer"
+type: "deer"
+emoji: "🦌"
 name: "Corzo"
 ---

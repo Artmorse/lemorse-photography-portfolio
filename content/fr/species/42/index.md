@@ -1,6 +1,7 @@
 ---
 id: 42
 scientific_name: "Lanius collurio"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Pie-grièche écorcheur"
 ---

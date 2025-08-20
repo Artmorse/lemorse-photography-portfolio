@@ -1,6 +1,7 @@
 ---
 id: 101
 scientific_name: "Cisticola juncidis"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Zitting cisticola"
 ---

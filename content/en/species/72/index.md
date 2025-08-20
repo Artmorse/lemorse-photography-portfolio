@@ -1,6 +1,7 @@
 ---
 id: 72
 scientific_name: "Regulus regulus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Goldcrest"
 ---

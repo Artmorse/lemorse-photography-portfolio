@@ -1,6 +1,7 @@
 ---
 id: 6
 scientific_name: "Alticinae"
-emoji: "beetle"
+type: "beetle"
+emoji: "🐞"
 name: "Flea beetle"
 ---

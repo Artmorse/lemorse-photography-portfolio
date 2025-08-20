@@ -1,6 +1,7 @@
 ---
 id: 39
 scientific_name: "Haematopus ostralegus"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Eurasian Oystercatcher"
 ---

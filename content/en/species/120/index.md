@@ -1,6 +1,7 @@
 ---
 id: 120
 scientific_name: "Anacamptis pyramidalis"
-emoji: "orchid"
+type: "orchid"
+emoji: "🌸"
 name: "Pyramidal orchid"
 ---

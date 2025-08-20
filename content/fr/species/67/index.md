@@ -1,6 +1,7 @@
 ---
 id: 67
 scientific_name: "Phylloscopus collybita"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Pouillot véloce"
 ---

@@ -1,6 +1,7 @@
 ---
 id: 125
 scientific_name: "Delphinus delphis"
-emoji: "dolphin"
+type: "dolphin"
+emoji: "🐬"
 name: "Common dolphin"
 ---

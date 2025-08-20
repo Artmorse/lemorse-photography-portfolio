@@ -1,6 +1,7 @@
 ---
 id: 93
 scientific_name: "Milvus milvus"
-emoji: "birdofprey"
+type: "birdofprey"
+emoji: "🦅"
 name: "Milano real"
 ---

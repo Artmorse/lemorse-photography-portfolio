@@ -1,6 +1,7 @@
 ---
 id: 98
 scientific_name: "Succinea putris"
-emoji: "snail"
+type: "snail"
+emoji: "🐌"
 name: ""
 ---

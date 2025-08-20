@@ -1,6 +1,7 @@
 ---
 id: 53
 scientific_name: "Myocastor coypus"
-emoji: "rat"
+type: "rat"
+emoji: "🐀"
 name: "Nutria"
 ---

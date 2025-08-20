@@ -1,6 +1,7 @@
 ---
 id: 87
 scientific_name: "Upupa epops"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Eurasian Hoopoe"
 ---

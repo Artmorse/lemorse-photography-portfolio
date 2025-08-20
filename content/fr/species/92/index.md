@@ -1,6 +1,7 @@
 ---
 id: 92
 scientific_name: "Monticola solitarius"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Monticole bleu"
 ---

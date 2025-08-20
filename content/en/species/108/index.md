@@ -1,6 +1,7 @@
 ---
 id: 108
 scientific_name: "Myiopsitta monachus"
-emoji: "parrot"
+type: "parrot"
+emoji: "🦜"
 name: "Monk Parakeet"
 ---

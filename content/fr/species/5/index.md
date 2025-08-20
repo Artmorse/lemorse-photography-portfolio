@@ -1,6 +1,7 @@
 ---
 id: 5
 scientific_name: "Alectoris rufa"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Perdrix rouge"
 ---

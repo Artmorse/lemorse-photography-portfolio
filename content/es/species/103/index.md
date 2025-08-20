@@ -1,6 +1,7 @@
 ---
 id: 103
 scientific_name: "Anas crecca"
-emoji: "duck"
+type: "duck"
+emoji: "🦆"
 name: "Cerceta común"
 ---

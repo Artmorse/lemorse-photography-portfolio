@@ -1,6 +1,7 @@
 ---
 id: 54
 scientific_name: "Numenius arquata"
-emoji: "bird"
+type: "bird"
+emoji: "🐦"
 name: "Eurasian Curlew"
 ---
