@@ -24,9 +24,8 @@
 
 {{ $tree := dict }}
 {{ $leaves := dict "department" (dict) "city" (dict) "sublocation" (dict) }}
-{{ $locations := where (where (where .Site.AllPages "Lang" "fr") "Section" "locations") "Kind" "page" }}
 
-{{ range $locations }}
+{{ range .RegularPages }}
 
     {{ $country := .Params.country }}
     {{ $region := .Params.region }}
