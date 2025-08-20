@@ -1,5 +1,10 @@
 {{ define "main" }}
 
+<div class="profile-header">
+    <img src="/images/profile.jpg" alt="Le Morse logo" class="profile-logo">
+    <p class="profile-name">Le Morse Photography</p>
+</div>
+
 <div class="publications">
 
     {{ $publications := sort .Site.Data.publications "published_at" "desc" }}

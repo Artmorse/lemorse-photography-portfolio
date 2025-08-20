@@ -37,6 +37,8 @@ footer {
     font-family: 'Gentrice Story';
     font-size: 3rem;
     margin-left: 3rem;
+    color: #000;
+    text-decoration: none;
 }
 
 .footer-logo {
@@ -185,6 +187,27 @@ footer {
     text-decoration: underline;
 }
 
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.profile-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;   /* makes it round like Instagram */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-name {
+    font-family: 'Gentrice Story';
+    font-size: 4rem;
+}
+
 .publications {
     display: flex;
     flex-direction: column;
@@ -193,6 +216,8 @@ footer {
 .publication {
     display: flex;
     gap: 20px;
+    max-width: 900px;   /* adjust to your liking */
+    margin: 0 auto;     /* centers horizontally */
 }
 .publication.reverse {
     flex-direction: row-reverse;
