@@ -281,11 +281,10 @@ footer {
     cursor: pointer;
     z-index: 1;
     border-radius: 50%;
+    text-shadow: 0 0 8px rgb(0, 0, 0); /* glow effect */
     /* Vertical alignment */
     top: 50%;
     transform: translateY(-50%);
-
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* glow effect */
 }
 
 .carousel .glider-prev {

@@ -7,59 +7,19 @@
 <div class="publications">
 
     {{ $photos := .Site.Data.photos }}
+    {{ $publications := where .Site.AllPages "Section" "publications" }}
+    {{ $publications = where $publications "Lang" "fr" }}
+    {{ $publications = sort $publications "Params.published_at" "desc" }}
 
-    {{ range $i, $publication := sort .RegularPages "Params.published_at" "desc" }}
+    {{ range $i, $publication := $publications }}
         {{ $publicationPhotos := where $photos "id" "in" $publication.Params.photo_ids }}
-
-        <article class="publication {{ if modBool $i 2 }}reverse{{ end }}" data-id="{{ $publication.Params.id }}">
-            <div class="details">
-                <h3>{{ $publication.Params.published_at }}</h3>
-                <div class="content">
-                    {{ $publication.Content | replaceRE "\n" "<br/>" | safeHTML }}
-                </div>
-            </div>
-
-            <div class="carousel">
-                <div class="glider-container">
-                    <div class="glider">
-                        {{ range $publicationPhotos }}
-                            {{ $url := partial "imgproxy.html" (dict "filename" .signed_filename "width" 600) }}
-                            <img src="{{ $url }}" loading="lazy" data-id="{{ .id }}"/>
-                        {{ end }}
-                    </div>
-                    <button aria-label="Previous" class="glider-prev" {{ if eq (len $publicationPhotos) 1 }}style="display: none;"{{ end }}>«</button>
-                    <button aria-label="Next" class="glider-next"{{ if eq (len $publicationPhotos) 1 }}style="display: none;"{{ end }}>»</button>
-                </div>
-
-                <div role="tablist" class="dots"></div>
-            </div>
-        </article>
+        {{ partial "publication.html" (dict "Publication" $publication "Photos" $publicationPhotos "isReversed" (modBool $i 2)) }}
     {{ end }}
 </div>
-
 {{ end }}
 
-
 {{ define "scripts" }}
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll(".carousel").forEach(carousel => {
-            const gliderEl = carousel.querySelector(".glider");
-            const prev = carousel.querySelector(".glider-prev");
-            const next = carousel.querySelector(".glider-next");
-            const dots = carousel.querySelector(".dots");
-
-            new Glider(gliderEl, {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                draggable: false,
-                dots: dots,
-                arrows: {
-                    prev: prev,
-                    next: next
-                }
-            });
-        });
-    });
-</script>
+    <!-- Initialize the carousels -->
+    {{ $carouselJS := resources.Get "js/carousel.js" | minify | fingerprint }}
+    <script src="{{ $carouselJS.Permalink }}"></script>
 {{ end }}
