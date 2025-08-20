@@ -10,7 +10,7 @@
     ```
 */}}
 
-{{ $species := where (where .Page.Site.AllPages "Lang" .Page.Lang) "Section" "species" }}
+{{ $species := where (where .Page.Site.AllPages "Lang" .Lang) "Section" "species" }}
 {{ $locations := where (where .Page.Site.AllPages "Lang" "fr") "Section" "locations" }}
 {{ $photos := .Page.Site.Data.photos }}
 

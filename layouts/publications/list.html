@@ -12,7 +12,7 @@
     {{ $publications = sort $publications "Params.published_at" "desc" }}
 
     {{ range $i, $publication := $publications }}
-        {{ partial "publication/single.html" (dict "Publication" $publication "isReversed" (modBool $i 2) "Page" . ) }}
+        {{ partial "publication/single.html" (dict "Publication" $publication "isReversed" (modBool $i 2) "Lang" $.Lang "Page" . ) }}
     {{ end }}
 </div>
 {{ end }}

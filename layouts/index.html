@@ -12,7 +12,7 @@
     {{ $lastPublications := first 3 $publications }}
 
     {{ range $i, $publication := $lastPublications }}
-        {{ partial "publication/single.html" (dict "Publication" $publication "isReversed" (modBool $i 2) "Page" . ) }}
+        {{ partial "publication/single.html" (dict "Publication" $publication "isReversed" (modBool $i 2) "Lang" $.Lang "Page" . ) }}
     {{ end }}
 </div>
 
