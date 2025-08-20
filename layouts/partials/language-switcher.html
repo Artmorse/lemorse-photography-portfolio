@@ -8,7 +8,7 @@
         {{ range .Translations }}
             <li>
                 <a href="{{ .Permalink }}">
-                    <img src="{{ printf "flags/%s.svg" .Language.Lang | relURL }}" alt="{{ .Language.LanguageName }}" width="24" height="16"/>
+                    <img src="{{ printf "flags/%s.svg" .Language.Lang | relURL }}" alt="{{ .Lang }}" width="24" height="16"/>
                     <!-- {{ .Language.LanguageName }} -->
                 </a>
             </li>

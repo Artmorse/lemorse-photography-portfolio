@@ -1,0 +1,8 @@
+{{ $dateStr := .date }}
+{{ with $dateStr }}
+    {{ $date := time . }}
+    {{ i18n ( $date.Format "January" ) }} {{ $date.Format "2006" }}
+{{ else }}
+    <!-- Optional fallback if no date -->
+    No date available
+{{ end }}

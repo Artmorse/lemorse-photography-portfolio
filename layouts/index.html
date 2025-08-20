@@ -7,15 +7,12 @@
 
 <div class="publications">
 
-    {{ $photos := .Site.Data.photos }}
-    {{ $publications := where .Site.AllPages "Section" "publications" }}
-    {{ $publications = where $publications "Lang" "fr" }}
+    {{ $publications := where (where (where .Site.AllPages "Lang" "fr") "Section" "publications") "Kind" "page" }}
     {{ $publications = sort $publications "Params.published_at" "desc" }}
     {{ $lastPublications := first 3 $publications }}
 
     {{ range $i, $publication := $lastPublications }}
-        {{ $publicationPhotos := where $photos "id" "in" $publication.Params.photo_ids }}
-        {{ partial "publication.html" (dict "Publication" $publication "Photos" $publicationPhotos "isReversed" (modBool $i 2)) }}
+        {{ partial "publication/single.html" (dict "Publication" $publication "isReversed" (modBool $i 2) "Page" . ) }}
     {{ end }}
 </div>
 
