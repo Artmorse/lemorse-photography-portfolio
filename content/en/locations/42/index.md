@@ -7,4 +7,6 @@ region: "Catalogne"
 country: "Espagne"
 latitude: 41.3825802
 longitude: 2.177073
+country_flag: "🇪🇸"
 ---
+Barcelone, Barcelone, Catalogne, Espagne 🇪🇸

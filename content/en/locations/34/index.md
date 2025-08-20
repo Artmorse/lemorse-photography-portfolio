@@ -7,4 +7,6 @@ region: "Normandie"
 country: "France"
 latitude: 49.4128118
 longitude: 1.0914664
+country_flag: "🇫🇷"
 ---
+Réserve Naturelle de l'Estuaire de la Seine, Eure/Seine-Maritime, Normandie, France 🇫🇷

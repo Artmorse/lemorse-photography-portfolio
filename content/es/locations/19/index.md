@@ -7,4 +7,6 @@ region: "Nouvelle-Aquitaine"
 country: "France"
 latitude: 43.8751359
 longitude: -1.302587
+country_flag: "🇫🇷"
 ---
+Léon, Landes, Nouvelle-Aquitaine, France 🇫🇷

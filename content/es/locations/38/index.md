@@ -7,4 +7,6 @@ region: "Provence-Alpes-Côte d'Azur"
 country: "France"
 latitude: 43.5424182
 longitude: 5.0343236
+country_flag: "🇫🇷"
 ---
+Parc naturel régional de Camargue, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France 🇫🇷

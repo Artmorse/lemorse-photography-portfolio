@@ -7,4 +7,6 @@ region: "Îles Baléares"
 country: "Espagne"
 latitude: 39.9492572
 longitude: 4.0499642
+country_flag: "🇪🇸"
 ---
+Minorque, Îles Baléares, Espagne 🇪🇸

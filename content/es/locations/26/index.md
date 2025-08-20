@@ -7,4 +7,6 @@ region: "Occitanie"
 country: "France"
 latitude: 42.7075836
 longitude: 1.8668866
+country_flag: "🇫🇷"
 ---
+Orgeix, Ariège, Occitanie, France 🇫🇷

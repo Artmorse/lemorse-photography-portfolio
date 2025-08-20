@@ -25,13 +25,6 @@
             {{ .Publication.Content | replaceRE "\n" "<br/>" | safeHTML }}
         </div> -->
         <div class="content">
-            {{ $inlinedLocation := partial "locations/inline.html" (slice
-                    $publicationLocation.Params.sublocation
-                    $publicationLocation.Params.city
-                    $publicationLocation.Params.department
-                    $publicationLocation.Params.region
-                    $publicationLocation.Params.country
-                )}}
             <span title="{{ $publicationSpecies.Params.type }}">{{ $publicationSpecies.Params.emoji }}</span>
             <br/>
             <a href="{{ $publicationSpecies.RelPermalink }}" title="{{ $publicationSpecies.Params.name }}">
@@ -43,8 +36,8 @@
             </a>
             <br/>
             <br/>
-            <a href="{{ $publicationLocation.RelPermalink }}" title="{{ $inlinedLocation }}">
-                🗺️ {{ $inlinedLocation }}
+            <a href="{{ $publicationLocation.RelPermalink }}" title="{{ $publicationLocation.RawContent }}">
+                🗺️ {{ $publicationLocation.RawContent }}
             </a>
             <br/>
             📅 {{ partial "publication/format_date.html" (dict "date" (index $publicationPhotos 0).date) }}

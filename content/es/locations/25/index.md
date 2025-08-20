@@ -7,4 +7,6 @@ region: "Occitanie"
 country: "France"
 latitude: 42.6586911
 longitude: 1.8371515
+country_flag: "🇫🇷"
 ---
+Mérens-les-Vals, Ariège, Occitanie, France 🇫🇷

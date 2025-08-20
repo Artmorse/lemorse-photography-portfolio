@@ -7,4 +7,6 @@ region: "Occitanie"
 country: "France"
 latitude: 42.5706951
 longitude: 1.9991357
+country_flag: "🇫🇷"
 ---
+Lac des Bouillouses, Pyrénées-Orientales, Occitanie, France 🇫🇷

@@ -148,13 +148,7 @@
                     {{ if ne $leaf nil }}
                         <a 
                             href="{{ $leaf.RelPermalink }}" 
-                            title={{ partial "locations/inline.html" (slice
-                                $leaf.Params.sublocation
-                                $leaf.Params.city
-                                $leaf.Params.department
-                                $leaf.Params.region
-                                $leaf.Params.country
-                            ) }}
+                            title="{{ $leaf.RawContent }}"
                         >
                     {{ end }}
                         {{ $department}}
@@ -169,13 +163,7 @@
                                 {{ if ne $leaf nil }}
                                     <a 
                                         href="{{ $leaf.RelPermalink }}" 
-                                        title={{ partial "locations/inline.html" (slice
-                                            $leaf.Params.sublocation
-                                            $leaf.Params.city
-                                            $leaf.Params.department
-                                            $leaf.Params.region
-                                            $leaf.Params.country
-                                        ) }}
+                                        title="{{ $leaf.RawContent }}"
                                     >
                                 {{ end }}
                                     {{ $city}}
@@ -190,13 +178,7 @@
                                                 {{ if ne $leaf nil }}
                                                     <a 
                                                         href="{{ $leaf.RelPermalink }}" 
-                                                        title={{ partial "locations/inline.html" (slice
-                                                            $leaf.Params.sublocation
-                                                            $leaf.Params.city
-                                                            $leaf.Params.department
-                                                            $leaf.Params.region
-                                                            $leaf.Params.country
-                                                        ) }}
+                                                        title="{{ $leaf.RawContent }}"
                                                     >
                                                 {{ end }}
                                                     {{ $sublocation}}
