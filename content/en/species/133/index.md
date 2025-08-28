@@ -1,7 +1,7 @@
 ---
 id: 133
 scientific_name: "Felis catus"
-type: "cat"
+category: "cat"
 emoji: "🐈"
 name: "Domestic cat"
 ---

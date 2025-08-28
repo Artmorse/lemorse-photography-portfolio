@@ -1,7 +1,7 @@
 ---
 id: 129
 scientific_name: "Araneae"
-type: "spider"
+category: "spider"
 emoji: "🕷️"
 name: "Araignée"
 ---

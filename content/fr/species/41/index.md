@@ -1,7 +1,7 @@
 ---
 id: 41
 scientific_name: "Hemaris fuciformis"
-type: "butterfly"
+category: "butterfly"
 emoji: "🦋"
 name: "Sphinx du chèvrefeuille"
 ---

@@ -1,7 +1,7 @@
 ---
 id: 62
 scientific_name: "Phalacrocorax carbo"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: ""
 ---

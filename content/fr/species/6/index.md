@@ -1,7 +1,7 @@
 ---
 id: 6
 scientific_name: "Alticinae"
-type: "beetle"
+category: "beetle"
 emoji: "🐞"
 name: "Altise"
 ---

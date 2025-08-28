@@ -1,7 +1,7 @@
 ---
 id: 34
 scientific_name: "Gallinula chloropus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Common moorhen"
 ---

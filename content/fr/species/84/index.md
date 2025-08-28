@@ -1,7 +1,7 @@
 ---
 id: 84
 scientific_name: "Turdus merula"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Merle noir"
 ---

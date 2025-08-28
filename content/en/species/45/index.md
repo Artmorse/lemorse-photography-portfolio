@@ -1,7 +1,7 @@
 ---
 id: 45
 scientific_name: "Lissotriton helveticus"
-type: "amphibian"
+category: "amphibian"
 emoji: "🦎"
 name: "Palmate newt"
 ---

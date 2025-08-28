@@ -1,7 +1,7 @@
 ---
 id: 116
 scientific_name: "Ophrys bombyliflora"
-type: "orchid"
+category: "orchid"
 emoji: "🌸"
 name: "Bumblebee orchid"
 ---

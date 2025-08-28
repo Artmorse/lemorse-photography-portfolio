@@ -1,7 +1,7 @@
 ---
 id: 89
 scientific_name: "Vulpes vulpes"
-type: "fox"
+category: "fox"
 emoji: "🦊"
 name: ""
 ---

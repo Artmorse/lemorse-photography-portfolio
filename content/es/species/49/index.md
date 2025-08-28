@@ -1,7 +1,7 @@
 ---
 id: 49
 scientific_name: "Morus bassanus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Alcatraz Atlántico"
 ---

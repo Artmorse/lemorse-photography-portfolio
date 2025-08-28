@@ -1,7 +1,7 @@
 ---
 id: 75
 scientific_name: "Sciurus vulgaris"
-type: "squirrel"
+category: "squirrel"
 emoji: "🐿️"
 name: "Red squirrel"
 ---

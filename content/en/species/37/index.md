@@ -1,7 +1,7 @@
 ---
 id: 37
 scientific_name: "Gypaetus barbatus"
-type: "birdofprey"
+category: "birdofprey"
 emoji: "🦅"
 name: "Bearded vulture"
 ---

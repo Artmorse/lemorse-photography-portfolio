@@ -1,7 +1,7 @@
 ---
 id: 46
 scientific_name: "Lophophanes cristatus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Mésange huppée"
 ---

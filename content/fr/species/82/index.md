@@ -1,7 +1,7 @@
 ---
 id: 82
 scientific_name: "Tringa ochropus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Chevalier culblanc"
 ---

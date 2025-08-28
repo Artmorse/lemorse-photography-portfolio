@@ -1,7 +1,7 @@
 ---
 id: 53
 scientific_name: "Myocastor coypus"
-type: "rat"
+category: "rat"
 emoji: "🐀"
 name: "Coipo"
 ---

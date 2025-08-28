@@ -1,7 +1,7 @@
 ---
 id: 26
 scientific_name: "Cygnus olor"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Mute swan"
 ---

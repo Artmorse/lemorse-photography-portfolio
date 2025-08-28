@@ -1,7 +1,7 @@
 ---
 id: 72
 scientific_name: "Regulus regulus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Reyezuelo Sencillo"
 ---

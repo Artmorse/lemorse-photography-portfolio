@@ -1,7 +1,7 @@
 ---
 id: 121
 scientific_name: "Ophrys speculum"
-type: "orchid"
+category: "orchid"
 emoji: "🌸"
 name: "Mirror orchid"
 ---

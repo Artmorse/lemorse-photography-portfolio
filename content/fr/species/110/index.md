@@ -1,7 +1,7 @@
 ---
 id: 110
 scientific_name: "Egretta gularis"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Aigrette des récifs"
 ---

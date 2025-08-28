@@ -1,7 +1,7 @@
 ---
 id: 64
 scientific_name: "Phoca vitulina"
-type: "seal"
+category: "seal"
 emoji: "🦭"
 name: "Harbor seal"
 ---

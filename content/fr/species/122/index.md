@@ -1,7 +1,7 @@
 ---
 id: 122
 scientific_name: "Anthus pratensis"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Pipit farlouse"
 ---

@@ -1,7 +1,7 @@
 ---
 id: 92
 scientific_name: "Monticola solitarius"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Blue rock trush"
 ---

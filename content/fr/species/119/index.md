@@ -1,7 +1,7 @@
 ---
 id: 119
 scientific_name: "Lathyrus clymenum"
-type: "flower"
+category: "flower"
 emoji: "🌸"
 name: "Gesse clymène"
 ---

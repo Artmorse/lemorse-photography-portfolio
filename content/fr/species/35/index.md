@@ -1,7 +1,7 @@
 ---
 id: 35
 scientific_name: "Grampus griseus"
-type: "dolphin"
+category: "dolphin"
 emoji: "🐬"
 name: "Dauphin de Risso"
 ---

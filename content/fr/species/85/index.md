@@ -1,7 +1,7 @@
 ---
 id: 85
 scientific_name: "Turdus philomelos"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Grive musicienne"
 ---

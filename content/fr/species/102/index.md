@@ -1,7 +1,7 @@
 ---
 id: 102
 scientific_name: "Plegadis falcinellus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Ibis falcinelle"
 ---

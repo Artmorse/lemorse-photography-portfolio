@@ -1,7 +1,7 @@
 ---
 id: 59
 scientific_name: "Panurus biarmicus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Panure à moustaches"
 ---

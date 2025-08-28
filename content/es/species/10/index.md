@@ -1,7 +1,7 @@
 ---
 id: 10
 scientific_name: "Arenaria interpres"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Vuelvepiedras Común"
 ---

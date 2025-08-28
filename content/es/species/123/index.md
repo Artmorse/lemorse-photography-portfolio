@@ -1,7 +1,7 @@
 ---
 id: 123
 scientific_name: "Oenanthe hispanica"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Collalba Rubia Occidental"
 ---

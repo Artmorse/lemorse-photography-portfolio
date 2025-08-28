@@ -1,7 +1,7 @@
 ---
 id: 48
 scientific_name: "Thomisidae"
-type: "spider"
+category: "spider"
 emoji: "🕷️"
 name: "Araignée crabe"
 ---

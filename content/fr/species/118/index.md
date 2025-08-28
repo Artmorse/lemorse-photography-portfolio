@@ -1,7 +1,7 @@
 ---
 id: 118
 scientific_name: "Ophrys lutea"
-type: "orchid"
+category: "orchid"
 emoji: "🌸"
 name: "Ophrys jaune"
 ---

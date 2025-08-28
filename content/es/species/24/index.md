@@ -1,7 +1,7 @@
 ---
 id: 24
 scientific_name: "Corvus frugilegus"
-type: "raven"
+category: "raven"
 emoji: "🐦‍⬛"
 name: "Graja"
 ---

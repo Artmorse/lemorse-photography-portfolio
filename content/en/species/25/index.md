@@ -1,7 +1,7 @@
 ---
 id: 25
 scientific_name: "Curruca melanocephala"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Sardinian Warbler"
 ---

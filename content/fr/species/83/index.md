@@ -1,7 +1,7 @@
 ---
 id: 83
 scientific_name: "Troglodytes troglodytes"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Troglodyte mignon"
 ---

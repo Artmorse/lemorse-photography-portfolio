@@ -1,7 +1,7 @@
 ---
 id: 99
 scientific_name: "Alauda arvensis"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Alondra común"
 ---

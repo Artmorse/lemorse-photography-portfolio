@@ -1,7 +1,7 @@
 ---
 id: 95
 scientific_name: "Calidris alpina"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Dunlin"
 ---

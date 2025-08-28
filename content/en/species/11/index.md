@@ -1,7 +1,7 @@
 ---
 id: 11
 scientific_name: "Aulacorthum solani"
-type: "bug"
+category: "bug"
 emoji: "🐛"
 name: "Aphid"
 ---

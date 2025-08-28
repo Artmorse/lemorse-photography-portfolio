@@ -1,7 +1,7 @@
 ---
 id: 14
 scientific_name: "Bos taurus taurus"
-type: "cow"
+category: "cow"
 emoji: "🐄"
 name: "Highland cattle"
 ---

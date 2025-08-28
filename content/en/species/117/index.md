@@ -1,7 +1,7 @@
 ---
 id: 117
 scientific_name: "Ophrys tenthredinifera"
-type: "orchid"
+category: "orchid"
 emoji: "🌸"
 name: "Sawfly orchid"
 ---

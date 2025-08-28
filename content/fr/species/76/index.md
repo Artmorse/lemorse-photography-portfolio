@@ -1,7 +1,7 @@
 ---
 id: 76
 scientific_name: "Sitta europaea"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Sittelle torchepot"
 ---

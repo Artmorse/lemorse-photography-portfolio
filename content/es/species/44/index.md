@@ -1,7 +1,7 @@
 ---
 id: 44
 scientific_name: "Lepus europaeus"
-type: "rabbit"
+category: "rabbit"
 emoji: "🐇"
 name: "Lepus"
 ---

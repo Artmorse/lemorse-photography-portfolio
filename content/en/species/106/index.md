@@ -1,7 +1,7 @@
 ---
 id: 106
 scientific_name: "Ichthyaetus audouinii"
-type: "seagull"
+category: "seagull"
 emoji: "🐦"
 name: "Audouin's Gull"
 ---

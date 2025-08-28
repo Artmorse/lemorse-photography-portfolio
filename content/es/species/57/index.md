@@ -1,7 +1,7 @@
 ---
 id: 57
 scientific_name: "Oryctolagus cuniculus"
-type: "rabbit"
+category: "rabbit"
 emoji: "🐇"
 name: "Conejo común"
 ---

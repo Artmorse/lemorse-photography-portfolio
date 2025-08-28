@@ -1,7 +1,7 @@
 ---
 id: 18
 scientific_name: "Caucasotachea vindobonensis"
-type: "snail"
+category: "snail"
 emoji: "🐌"
 name: "Escargot"
 ---

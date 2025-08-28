@@ -1,7 +1,7 @@
 ---
 id: 131
 scientific_name: "Delia radicum"
-type: "fly"
+category: "fly"
 emoji: "🪰"
 name: "Mosca del repollo"
 ---

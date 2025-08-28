@@ -1,7 +1,7 @@
 ---
 id: 20
 scientific_name: "Cervus elaphus"
-type: "deer"
+category: "deer"
 emoji: "🦌"
 name: ""
 ---

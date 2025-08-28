@@ -1,7 +1,7 @@
 ---
 id: 51
 scientific_name: "Motacilla cinerea"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Grey wagtail"
 ---

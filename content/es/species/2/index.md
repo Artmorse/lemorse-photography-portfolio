@@ -1,7 +1,7 @@
 ---
 id: 2
 scientific_name: "Aegithalos caudatus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Mito Común"
 ---

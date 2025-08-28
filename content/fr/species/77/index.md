@@ -1,7 +1,7 @@
 ---
 id: 77
 scientific_name: "Stevenia umbratica"
-type: "fly"
+category: "fly"
 emoji: "🪰"
 name: "Mouche"
 ---

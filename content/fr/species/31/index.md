@@ -1,7 +1,7 @@
 ---
 id: 31
 scientific_name: "Erithacus rubecula"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Rouge-gorge familier"
 ---

@@ -1,7 +1,7 @@
 ---
 id: 91
 scientific_name: "Hieraaetus pennatus"
-type: "birdofprey"
+category: "birdofprey"
 emoji: "🦅"
 name: "Booted Eagle"
 ---

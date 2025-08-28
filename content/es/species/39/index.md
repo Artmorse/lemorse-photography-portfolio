@@ -1,7 +1,7 @@
 ---
 id: 39
 scientific_name: "Haematopus ostralegus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Ostrero Euroasiático"
 ---

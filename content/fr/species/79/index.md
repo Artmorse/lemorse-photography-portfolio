@@ -1,7 +1,7 @@
 ---
 id: 79
 scientific_name: "Tachypodoiulus niger"
-type: "bug"
+category: "bug"
 emoji: "🐛"
 name: "Iule"
 ---

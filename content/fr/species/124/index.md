@@ -1,7 +1,7 @@
 ---
 id: 124
 scientific_name: "Capra ibex"
-type: "goat"
+category: "goat"
 emoji: "🐐"
 name: "Bouquetin des alpes"
 ---

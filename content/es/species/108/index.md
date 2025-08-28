@@ -1,7 +1,7 @@
 ---
 id: 108
 scientific_name: "Myiopsitta monachus"
-type: "parrot"
+category: "parrot"
 emoji: "🦜"
 name: "Cotorra Argentina"
 ---

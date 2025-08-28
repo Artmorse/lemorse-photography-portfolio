@@ -1,7 +1,7 @@
 ---
 id: 56
 scientific_name: "Ondatra zibethicus"
-type: "rat"
+category: "rat"
 emoji: "🐀"
 name: "Rat musqué"
 ---

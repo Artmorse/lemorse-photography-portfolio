@@ -1,7 +1,7 @@
 ---
 id: 54
 scientific_name: "Numenius arquata"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Zarapito Real"
 ---

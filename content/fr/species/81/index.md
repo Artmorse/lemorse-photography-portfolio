@@ -1,7 +1,7 @@
 ---
 id: 81
 scientific_name: "Tichodroma muraria"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Tichodrome échelette"
 ---

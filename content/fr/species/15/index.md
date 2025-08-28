@@ -1,7 +1,7 @@
 ---
 id: 15
 scientific_name: "Calidris alba"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Bécasseau sanderling"
 ---

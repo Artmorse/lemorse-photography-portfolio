@@ -1,7 +1,7 @@
 ---
 id: 113
 scientific_name: "Corvus corax"
-type: "raven"
+category: "raven"
 emoji: "🐦‍⬛"
 name: "Grand corbeau"
 ---

@@ -1,7 +1,7 @@
 ---
 id: 88
 scientific_name: "Vanellus vanellus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Northern Lapwing"
 ---

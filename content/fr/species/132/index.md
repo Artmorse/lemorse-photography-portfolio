@@ -1,7 +1,7 @@
 ---
 id: 132
 scientific_name: "Strophosoma capitatum"
-type: "beetle"
+category: "beetle"
 emoji: "🐞"
 name: "Charançon"
 ---

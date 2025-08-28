@@ -1,7 +1,7 @@
 ---
 id: 67
 scientific_name: "Phylloscopus collybita"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Mosquitero Común"
 ---

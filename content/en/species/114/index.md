@@ -1,7 +1,7 @@
 ---
 id: 114
 scientific_name: "Tarentola mauritanica"
-type: "gecko"
+category: "gecko"
 emoji: "🦎"
 name: "European common gecko"
 ---

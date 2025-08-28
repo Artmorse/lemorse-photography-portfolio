@@ -1,7 +1,7 @@
 ---
 id: 1
 scientific_name: "Philaeus chrysops"
-type: "spider"
+category: "spider"
 emoji: "🕷️"
 name: "Saltique sanguinolent"
 ---

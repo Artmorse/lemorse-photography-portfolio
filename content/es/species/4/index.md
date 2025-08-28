@@ -1,7 +1,7 @@
 ---
 id: 4
 scientific_name: "Alcedo atthis"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Martín pescador común"
 ---

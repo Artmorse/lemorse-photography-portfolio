@@ -1,7 +1,7 @@
 ---
 id: 107
 scientific_name: "Psittacula krameri"
-type: "parrot"
+category: "parrot"
 emoji: "🦜"
 name: "Rose-ringed Parakeet"
 ---

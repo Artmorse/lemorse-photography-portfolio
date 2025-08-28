@@ -1,7 +1,7 @@
 ---
 id: 38
 scientific_name: "Gyps fulvus"
-type: "birdofprey"
+category: "birdofprey"
 emoji: "🦅"
 name: ""
 ---

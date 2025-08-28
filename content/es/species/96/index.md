@@ -1,7 +1,7 @@
 ---
 id: 96
 scientific_name: "Nycticorax nycticorax"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Martinete común"
 ---

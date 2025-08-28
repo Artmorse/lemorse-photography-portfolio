@@ -1,7 +1,7 @@
 ---
 id: 130
 scientific_name: "Noctuidae"
-type: "butterfly"
+category: "butterfly"
 emoji: "🦋"
 name: "Noctuidos"
 ---

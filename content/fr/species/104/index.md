@@ -1,7 +1,7 @@
 ---
 id: 104
 scientific_name: "Neophron percnopterus"
-type: "birdofprey"
+category: "birdofprey"
 emoji: "🦅"
 name: "Percnoptère d'Égypte"
 ---

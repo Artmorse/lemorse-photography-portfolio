@@ -1,7 +1,7 @@
 ---
 id: 28
 scientific_name: "Egretta garzetta"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Little egret"
 ---

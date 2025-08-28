@@ -1,7 +1,7 @@
 ---
 id: 3
 scientific_name: "Aeshna cyanea"
-type: "dragonfly"
+category: "dragonfly"
 emoji: "🪰"
 name: ""
 ---

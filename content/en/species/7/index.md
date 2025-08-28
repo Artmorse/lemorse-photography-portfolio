@@ -1,7 +1,7 @@
 ---
 id: 7
 scientific_name: "Ardea alba"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Great egret"
 ---

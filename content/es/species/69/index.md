@@ -1,7 +1,7 @@
 ---
 id: 69
 scientific_name: "Pluvialis squatarola"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Chorlito Gris"
 ---

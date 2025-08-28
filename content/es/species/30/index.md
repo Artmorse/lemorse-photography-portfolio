@@ -1,7 +1,7 @@
 ---
 id: 30
 scientific_name: "Emberiza schoeniclus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Escribano Palustre"
 ---

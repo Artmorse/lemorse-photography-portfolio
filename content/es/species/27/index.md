@@ -1,7 +1,7 @@
 ---
 id: 27
 scientific_name: "Dendrocopos major"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Pico picapinos"
 ---

@@ -3,6 +3,7 @@ title = 'LeMorsePhotography'
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
 copyright = '© 2025 Arthur CARON'
+disableAliases = true
 
 [languages]
     [languages.fr]

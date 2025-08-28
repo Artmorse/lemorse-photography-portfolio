@@ -1,7 +1,7 @@
 ---
 id: 98
 scientific_name: "Succinea putris"
-type: "snail"
+category: "snail"
 emoji: "🐌"
 name: "Ambrette commune"
 ---

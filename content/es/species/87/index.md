@@ -1,7 +1,7 @@
 ---
 id: 87
 scientific_name: "Upupa epops"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Abubilla Común"
 ---

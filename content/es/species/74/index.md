@@ -1,7 +1,7 @@
 ---
 id: 74
 scientific_name: "Saxicola rubicola"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Tarabilla Europea"
 ---

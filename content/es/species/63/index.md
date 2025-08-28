@@ -1,7 +1,7 @@
 ---
 id: 63
 scientific_name: "Phasianus colchicus"
-type: "chicken"
+category: "chicken"
 emoji: "🐔"
 name: "Faisán Vulgar"
 ---

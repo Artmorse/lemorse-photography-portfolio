@@ -1,7 +1,7 @@
 ---
 id: 17
 scientific_name: "Capreolus capreolus"
-type: "deer"
+category: "deer"
 emoji: "🦌"
 name: "Chevreuil d'Europe"
 ---

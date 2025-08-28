@@ -1,7 +1,7 @@
 ---
 id: 70
 scientific_name: "Podiceps cristatus"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Somormujo Lavanco"
 ---

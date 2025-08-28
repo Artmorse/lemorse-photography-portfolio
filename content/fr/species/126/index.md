@@ -1,7 +1,7 @@
 ---
 id: 126
 scientific_name: "Hirundo rustica"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Hirondelle rustique"
 ---

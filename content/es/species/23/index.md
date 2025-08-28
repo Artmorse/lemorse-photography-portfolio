@@ -1,7 +1,7 @@
 ---
 id: 23
 scientific_name: "Corvus corone"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: ""
 ---

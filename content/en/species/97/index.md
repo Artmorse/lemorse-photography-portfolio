@@ -1,7 +1,7 @@
 ---
 id: 97
 scientific_name: "Fringilla coelebs"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Eurasian chaffinch"
 ---

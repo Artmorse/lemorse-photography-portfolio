@@ -1,7 +1,7 @@
 ---
 id: 68
 scientific_name: "Picus viridis"
-type: "bird"
+category: "bird"
 emoji: "🐦"
 name: "Eurasian Green Woodpecker"
 ---
