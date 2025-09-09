@@ -1,9 +1,23 @@
-{{- $filename := .filename -}}
-{{- $alt := .alt -}}
-{{- $caption := .caption -}}
-{{- $id := .id -}}
+{{- $photo := .photo -}}
+{{- $speciesName := .speciesName -}}
+{{- $withCaption := .withCaption | default false -}}
+
+{{- $filename := "" -}}
+{{- $withWatermark := false -}}
+
+{{ with $photo.portrait_signed_filename }}
+  {{- $filename = . -}}
+{{ else with $photo.landscape_signed_filename }}
+  {{- $filename = . -}}
+{{ else }}
+  {{- $filename = $photo.original_filename -}}
+  {{- $withWatermark = true -}}
+{{ end }}
+
 <div class="image-container">
-    {{ $url := partial "imgproxy.html" (dict "filename" $filename "width" 800) }}
-    <img src="{{ $url }}" alt="{{ $alt }}" data-id="{{ $id }}"/>
-    <div class="caption">{{ $caption }}</div>
+  {{- $url := partial "imgproxy.html" (dict "filename" $filename "width" 800 "withWatermark" $withWatermark) -}}
+  <img src="{{ $url }}" alt="{{ $speciesName }}" data-id="{{ $photo.id }}" />
+  {{- if $withCaption }}
+    <div class="caption">{{ $speciesName }}</div>
+  {{- end }}
 </div>

@@ -7,7 +7,8 @@
 
 {{ $allPhotos := site.Data.photos }}
 {{ $matchingPhotos := where $allPhotos ".location_id" "eq" .Params.id }}
-{{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }}
+{{ $shuffledPhotos := shuffle $matchingPhotos }}
+<!-- {{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }} -->
 
 {{ $allSpecies := where .Site.RegularPages "Section" "species" }}
 
@@ -16,16 +17,15 @@
         {{ partial "locations/title.html" . }}
     </h1>
     <div id="my-justified-gallery">
-        {{ range $photo := $sortedMatchingPhotos }}
+        {{ range $photo := $shuffledPhotos }}
 
             {{ $matchingSpecies := where $allSpecies "Params.id" "eq" $photo.species_id }}
             {{ $firstMatchingSpecies := index $matchingSpecies 0 }}
 
             {{ partial "image-container.html" (dict
-                "filename" $photo.signed_filename
-                "alt"      $firstMatchingSpecies.Params.name
-                "caption"  $firstMatchingSpecies.Params.name
-                "id"       $photo.id
+                "photo"         $photo
+                "speciesName"   $firstMatchingSpecies.Params.name
+                "withCaption"   true
             ) }}
         {{ end }}
     </div>

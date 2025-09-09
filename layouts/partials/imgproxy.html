@@ -1,6 +1,13 @@
 {{- $filename := .filename -}}
 {{- $width := or .width 0 -}}
 {{- $height := or .height 0 -}}
+{{- $withWatermark := .withWatermark | default false -}}
 <!-- .Site doesn't exists in this context use site instead -->
 {{- $imgproxy := site.Params.imgproxy_baseurl -}}
-{{- printf "%s/insecure/rs:fit:%d:%d/plain/local:///%s" $imgproxy $width $height $filename -}}
+
+{{- $transform := printf "rs:fit:%d:%d" $width $height -}}
+{{- if $withWatermark }}
+    {{- $transform = printf "%s/wm:1:soea:0:0:0.25" $transform -}}
+{{- end }}
+
+{{- printf "%s/insecure/%s/plain/local:///%s" $imgproxy $transform $filename -}}

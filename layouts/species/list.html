@@ -24,12 +24,12 @@
     {{ range $sortedSpeciesList }}
         {{ $species := .species }}
         {{ $photo := .photo }}
+
         <a href="{{ $species.RelPermalink }}">
             {{ partial "image-container.html" (dict
-                "filename" $photo.signed_filename
-                "alt"      $species.Params.name
-                "caption"  $species.Params.name
-                "id"       $photo.id
+                "photo"         $photo
+                "speciesName"   $species.Params.name
+                "withCaption"   true
             ) }}
         </a>
     {{ end }}

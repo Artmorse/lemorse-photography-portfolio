@@ -7,16 +7,17 @@
 
 {{ $allPhotos := site.Data.photos }}
 {{ $matchingPhotos := where $allPhotos ".species_id" "eq" .Params.id }}
-{{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }}
+{{ $shuffledPhotos := shuffle $matchingPhotos }}
+<!-- {{ $sortedMatchingPhotos := sort $matchingPhotos ".date" "asc" }} -->
 
 <article>
     <h1 class="title">{{ partial "species/title.html" . }}</h1>
     <div id="my-justified-gallery">
-        {{ range $photo := $sortedMatchingPhotos }}
+        {{ range $photo := $shuffledPhotos }}
             {{ partial "image-container.html" (dict
-                "filename" $photo.signed_filename
-                "alt"  .Params.name
-                "id" $photo.id
+                "photo"         $photo
+                "speciesName"   .Params.name
+                "withCaption"   true
             ) }}
         {{ end }}
     </div>
