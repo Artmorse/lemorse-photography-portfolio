@@ -14,10 +14,10 @@ services:
       - IMGPROXY_JPEG_PROGRESSIVE=true
       # https://docs.imgproxy.net/configuration/options#IMGPROXY_FORMAT_QUALITY
       # - IMGPROXY_FORMAT_QUALITY=jpeg=70
+      # https://docs.imgproxy.net/features/watermark
       - IMGPROXY_WATERMARK_PATH=/mnt/watermark.webp
       - IMGPROXY_WATERMARK_OPACITY=1
-      # http://localhost:8080/insecure/wm:1:soea:0:0:0.25/plain/local:///pygargue.png
     volumes:
       - ~/Pictures/_ignored-by-restic/lemorse-photos:/mnt/images:ro
-      # convert the PNG swatermark to WebP: cwebp signature-100%.png -o signature-100%.webp
+      # convert the PNG watermark to WebP: cwebp signature-100%.png -o signature-100%.webp
       - ./signature-100%.webp:/mnt/watermark.webp:ro
