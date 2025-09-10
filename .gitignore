@@ -1,2 +1,3 @@
 .vscode
 public
+docker-compose.prod.yaml

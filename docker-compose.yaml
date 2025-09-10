@@ -1,10 +1,40 @@
 version: "3"
 services:
+  traefik:
+    image: traefik:v3.4
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+    networks:
+      - proxy
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+    command:
+      - "--entrypoints.web.address=:80"
+
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.network=proxy"
+
+      - "--api.dashboard=false"
+      - "--api.insecure=false"
+
+      - "--log.level=INFO"
+      - "--accesslog=true"
 
   imgproxy:
     image: ghcr.io/imgproxy/imgproxy:v3.29.1
-    ports:
-      - "8080:8080"
+    container_name: imgproxy
+    restart: unless-stopped
+    networks:
+      - proxy
     environment:
       # https://docs.imgproxy.net/configuration/options#IMGPROXY_LOCAL_FILESYSTEM_ROOT
       - IMGPROXY_LOCAL_FILESYSTEM_ROOT=/mnt/images
@@ -21,3 +51,52 @@ services:
       - ~/Pictures/_ignored-by-restic/lemorse-photos:/mnt/images:ro
       # convert the PNG watermark to WebP: cwebp signature-100%.png -o signature-100%.webp
       - ./signature-100%.webp:/mnt/watermark.webp:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.imgproxy.rule=Host(`imgproxy.docker.localhost`) && PathPrefix(`/lemorse`)"
+      - "traefik.http.routers.imgproxy.entrypoints=web"
+      - "traefik.http.services.imgproxy.loadbalancer.server.port=8080"
+      - "traefik.http.routers.imgproxy.middlewares=watermark-rewrite"
+      - "traefik.http.middlewares.watermark-rewrite.replacepathregex.regex=^/lemorse/(.*)"
+      - "traefik.http.middlewares.watermark-rewrite.replacepathregex.replacement=/lemorse/wm:1:soea:0:0:0.25/$$1"
+
+networks:
+  proxy:
+    name: proxy
+
+#   db:
+#     image: mariadb:10.11
+#     command: --max-allowed-packet=64MB
+#     restart: always
+#     volumes:
+#       - db:/var/lib/mysql:Z
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=
+#       - MARIADB_AUTO_UPGRADE=1
+#       - MARIADB_DISABLE_UPGRADE_BACKUP=1
+#       - MYSQL_PASSWORD=
+#       - MYSQL_DATABASE=matomo
+#       - MYSQL_USER=matomo
+#       - MARIADB_AUTO_UPGRADE=1
+#       - MARIADB_INITDB_SKIP_TZINFO=1
+
+#   matomo:
+#     image: matomo
+#     restart: always
+#     volumes:
+# #     - ./config:/var/www/html/config:z
+# #     - ./logs:/var/www/html/logs:z
+#       - matomo:/var/www/html:z
+#     environment:
+#       - MATOMO_DATABASE_HOST=db
+#       - MATOMO_DATABASE_ADAPTER=mysql
+#       - MATOMO_DATABASE_TABLES_PREFIX=matomo_
+#       - MATOMO_DATABASE_USERNAME=matomo
+#       - MATOMO_DATABASE_PASSWORD=
+#       - MATOMO_DATABASE_DBNAME=matomo
+#     ports:
+#       - 8080:80
+
+# volumes:
+#   db:
+#   matomo:
