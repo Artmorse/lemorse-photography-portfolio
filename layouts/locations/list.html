@@ -22,6 +22,7 @@
     ```
 */}}
 
+{{ $allPhotos := site.Data.photos }}
 {{ $tree := dict }}
 {{ $leaves := dict "department" (dict) "city" (dict) "sublocation" (dict) }}
 
@@ -33,100 +34,105 @@
     {{ $city := .Params.city }}
     {{ $sublocation := .Params.sublocation }}
 
-    {{/* Decide the city key */}}
-    {{ $city := .Params.city }}
-    {{ if not $city }}
-        {{ if .Params.sublocation }}
-            {{ $city = .Params.sublocation }}
-        {{ else }}
-            {{ $city = "" }}
-        {{ end }}
-    {{ end }}
+    {{ $filteredPhotos := where $allPhotos "location_id" .Params.id }}
+    {{ $photoCount := len $filteredPhotos }}
 
-    {{/* Initialize country in tree */}}
-    {{ if not (index $tree $country) }}
-        {{/* Insert element in tree */}}
-        {{ $tree = merge $tree (dict $country dict) }}
-    {{ end }}
-
-    {{/* Initialize region in tree */}}
-    {{ $countryMap := index $tree $country }}
-    {{ if not (index $countryMap $region) }}
-        {{/* Insert element in tree */}}
-        {{ $countryMap = merge $countryMap (dict $region dict) }}
-        {{ $tree = merge $tree (dict $country $countryMap) }}
-    {{ end }}
-
-    {{/* Initialize department in tree */}}
-    {{ $regionMap := index $countryMap $region }}
-    {{ if not (index $regionMap $department) }}
-        {{/* Insert element in tree */}}
-        {{ $regionMap = merge $regionMap (dict $department dict) }}
-        {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
-        {{ $tree = merge $tree (dict $country $countryMap) }}
-    {{ end }}
-
-    {{ if and (eq .Params.city nil) (eq .Params.sublocation nil) }}
-        {{/* Add department in leaves - EDGE CASE 1 */}}
-        {{ $departmentLeaves := index $leaves "department" }}
-        {{ $departmentLeaves = merge $departmentLeaves (dict $department .) }}
-        {{ $leaves = merge $leaves (dict "department" $departmentLeaves) }}
-    {{ end }}
-
-    {{/* Initialize city in tree */}}
-    {{ if ne .Params.city nil }}
-        {{/* Initialize city in tree */}}
-        {{ $departmentMap := index $regionMap $department }}
-        {{ if not (index $departmentMap $city) }}
-            {{/* Insert element in tree */}}
-            {{ $departmentMap = merge $departmentMap (dict $city dict) }}
-            {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
-            {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
-            {{ $tree = merge $tree (dict $country $countryMap) }}
-        {{ end }}
-
-        {{ if eq .Params.sublocation nil }}
-            {{/* Add city in leaves - EDGE CASE 4 */}}
-            {{ $cityLeaves := index $leaves "city" }}
-            {{ $cityLeaves = merge $cityLeaves (dict $city .) }}
-            {{ $leaves = merge $leaves (dict "city" $cityLeaves) }}
-        {{ else }}
-            {{/* Initialize sublocation in tree */}}
-            {{ if ne .Params.sublocation nil }}
-                {{/* Initialize sublocation in tree */}}
-                {{ $cityMap := index $departmentMap $city }}
-                {{ if not (index $cityMap $sublocation) }}
-                    {{/* Insert element in tree */}}
-                    {{ $cityMap = merge $cityMap (dict $sublocation dict) }}
-                    {{ $departmentMap = merge $departmentMap (dict $city $cityMap) }}
-                    {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
-                    {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
-                    {{ $tree = merge $tree (dict $country $countryMap) }}
-                {{ end }}
+    {{ if gt $photoCount 0 }}
+        {{/* Decide the city key */}}
+        {{ $city := .Params.city }}
+        {{ if not $city }}
+            {{ if .Params.sublocation }}
+                {{ $city = .Params.sublocation }}
+            {{ else }}
+                {{ $city = "" }}
             {{ end }}
-            {{/* Add sublocation in leaves - EDGE CASE 2 */}}
-            {{ $sublocationLeaves := index $leaves "sublocation" }}
-            {{ $sublocationLeaves = merge $sublocationLeaves (dict $sublocation .) }}
-            {{ $leaves = merge $leaves (dict "sublocation" $sublocationLeaves) }}
         {{ end }}
-    {{ end }}
 
-    {{ if and (eq .Params.city nil) (ne .Params.sublocation nil) }}
-        {{/* In this case, the sublocation become a city */}}
-        {{/* Initialize city in tree */}}
-        {{ $departmentMap := index $regionMap $department }}
-        {{ if not (index $departmentMap $sublocation) }}
+        {{/* Initialize country in tree */}}
+        {{ if not (index $tree $country) }}
             {{/* Insert element in tree */}}
-            {{ $departmentMap = merge $departmentMap (dict $city dict) }}
-            {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
+            {{ $tree = merge $tree (dict $country dict) }}
+        {{ end }}
+
+        {{/* Initialize region in tree */}}
+        {{ $countryMap := index $tree $country }}
+        {{ if not (index $countryMap $region) }}
+            {{/* Insert element in tree */}}
+            {{ $countryMap = merge $countryMap (dict $region dict) }}
+            {{ $tree = merge $tree (dict $country $countryMap) }}
+        {{ end }}
+
+        {{/* Initialize department in tree */}}
+        {{ $regionMap := index $countryMap $region }}
+        {{ if not (index $regionMap $department) }}
+            {{/* Insert element in tree */}}
+            {{ $regionMap = merge $regionMap (dict $department dict) }}
             {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
             {{ $tree = merge $tree (dict $country $countryMap) }}
         {{ end }}
 
-        {{/* Add sublocation in CITY leaves - EDGE CASE 3 */}}
-            {{ $cityLeaves := index $leaves "city" }}
-            {{ $cityLeaves = merge $cityLeaves (dict $sublocation .) }}
-            {{ $leaves = merge $leaves (dict "city" $cityLeaves) }}
+        {{ if and (eq .Params.city nil) (eq .Params.sublocation nil) }}
+            {{/* Add department in leaves - EDGE CASE 1 */}}
+            {{ $departmentLeaves := index $leaves "department" }}
+            {{ $departmentLeaves = merge $departmentLeaves (dict $department .) }}
+            {{ $leaves = merge $leaves (dict "department" $departmentLeaves) }}
+        {{ end }}
+
+        {{/* Initialize city in tree */}}
+        {{ if ne .Params.city nil }}
+            {{/* Initialize city in tree */}}
+            {{ $departmentMap := index $regionMap $department }}
+            {{ if not (index $departmentMap $city) }}
+                {{/* Insert element in tree */}}
+                {{ $departmentMap = merge $departmentMap (dict $city dict) }}
+                {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
+                {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
+                {{ $tree = merge $tree (dict $country $countryMap) }}
+            {{ end }}
+
+            {{ if eq .Params.sublocation nil }}
+                {{/* Add city in leaves - EDGE CASE 4 */}}
+                {{ $cityLeaves := index $leaves "city" }}
+                {{ $cityLeaves = merge $cityLeaves (dict $city .) }}
+                {{ $leaves = merge $leaves (dict "city" $cityLeaves) }}
+            {{ else }}
+                {{/* Initialize sublocation in tree */}}
+                {{ if ne .Params.sublocation nil }}
+                    {{/* Initialize sublocation in tree */}}
+                    {{ $cityMap := index $departmentMap $city }}
+                    {{ if not (index $cityMap $sublocation) }}
+                        {{/* Insert element in tree */}}
+                        {{ $cityMap = merge $cityMap (dict $sublocation dict) }}
+                        {{ $departmentMap = merge $departmentMap (dict $city $cityMap) }}
+                        {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
+                        {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
+                        {{ $tree = merge $tree (dict $country $countryMap) }}
+                    {{ end }}
+                {{ end }}
+                {{/* Add sublocation in leaves - EDGE CASE 2 */}}
+                {{ $sublocationLeaves := index $leaves "sublocation" }}
+                {{ $sublocationLeaves = merge $sublocationLeaves (dict $sublocation .) }}
+                {{ $leaves = merge $leaves (dict "sublocation" $sublocationLeaves) }}
+            {{ end }}
+        {{ end }}
+
+        {{ if and (eq .Params.city nil) (ne .Params.sublocation nil) }}
+            {{/* In this case, the sublocation become a city */}}
+            {{/* Initialize city in tree */}}
+            {{ $departmentMap := index $regionMap $department }}
+            {{ if not (index $departmentMap $sublocation) }}
+                {{/* Insert element in tree */}}
+                {{ $departmentMap = merge $departmentMap (dict $city dict) }}
+                {{ $regionMap = merge $regionMap (dict $department $departmentMap) }}
+                {{ $countryMap = merge $countryMap (dict $region $regionMap) }}
+                {{ $tree = merge $tree (dict $country $countryMap) }}
+            {{ end }}
+
+            {{/* Add sublocation in CITY leaves - EDGE CASE 3 */}}
+                {{ $cityLeaves := index $leaves "city" }}
+                {{ $cityLeaves = merge $cityLeaves (dict $sublocation .) }}
+                {{ $leaves = merge $leaves (dict "city" $cityLeaves) }}
+        {{ end }}
     {{ end }}
 
 {{ end }}
