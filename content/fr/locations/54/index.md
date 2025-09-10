@@ -1,6 +1,6 @@
 ---
 id: 54
-sublocation: "Pas de l'Avoine"
+sublocation: "Pas à l'Ours"
 city: "Samoëns"
 department: "Haute-Savoie"
 region: "Auvergne-Rhône-Alpes"
@@ -9,4 +9,4 @@ latitude: 46.0834066
 longitude: 6.7269485
 country_flag: "🇫🇷"
 ---
-Pas de l'Avoine, Samoëns, Haute-Savoie, Auvergne-Rhône-Alpes, France 🇫🇷
+Pas à l'Ours, Samoëns, Haute-Savoie, Auvergne-Rhône-Alpes, France 🇫🇷
