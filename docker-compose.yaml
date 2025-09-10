@@ -56,9 +56,15 @@ services:
       - "traefik.http.routers.imgproxy.rule=Host(`imgproxy.docker.localhost`) && PathPrefix(`/lemorse`)"
       - "traefik.http.routers.imgproxy.entrypoints=web"
       - "traefik.http.services.imgproxy.loadbalancer.server.port=8080"
-      - "traefik.http.routers.imgproxy.middlewares=watermark-rewrite"
-      - "traefik.http.middlewares.watermark-rewrite.replacepathregex.regex=^/lemorse/(.*)"
-      - "traefik.http.middlewares.watermark-rewrite.replacepathregex.replacement=/lemorse/wm:1:soea:0:0:0.25/$$1"
+      - "traefik.http.routers.imgproxy.middlewares=wm-simple,wm-resize"
+
+      # Case 1: no resize before plain
+      - "traefik.http.middlewares.wm-simple.replacepathregex.regex=^/lemorse/plain/(.*)"
+      - "traefik.http.middlewares.wm-simple.replacepathregex.replacement=/lemorse/wm:1:soea:0:0:0.25/plain/local:///$$1"
+
+      # Case 2: resize (rs:...) before plain
+      - "traefik.http.middlewares.wm-resize.replacepathregex.regex=^/lemorse/(rs:[^/]+)/plain/(.*)"
+      - "traefik.http.middlewares.wm-resize.replacepathregex.replacement=/lemorse/$$1/wm:1:soea:0:0:0.25/plain/local:///$$2"
 
 networks:
   proxy:

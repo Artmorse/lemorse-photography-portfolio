@@ -1,2 +1,2 @@
 [params]
-    imgproxy_baseurl = "http://localhost:8080"
+    imgproxy_baseurl = "http://imgproxy.docker.localhost"
