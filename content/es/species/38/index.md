@@ -3,5 +3,5 @@ id: 38
 scientific_name: "Gyps fulvus"
 category: "birdofprey"
 emoji: "🦅"
-name: ""
+name: "Buitre Leonado"
 ---

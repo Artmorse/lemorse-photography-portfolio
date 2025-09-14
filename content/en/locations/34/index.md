@@ -1,6 +1,6 @@
 ---
 id: 34
-sublocation: "Réserve Naturelle de l'Estuaire de la Seine"
+sublocation: "Réserve naturelle de l'Estuaire de la Seine"
 city: null
 department: "Eure/Seine-Maritime"
 region: "Normandie"
@@ -9,4 +9,4 @@ latitude: 49.4128118
 longitude: 1.0914664
 country_flag: "🇫🇷"
 ---
-Réserve Naturelle de l'Estuaire de la Seine, Eure/Seine-Maritime, Normandie, France 🇫🇷
+Réserve naturelle de l'Estuaire de la Seine, Eure/Seine-Maritime, Normandie, France 🇫🇷
