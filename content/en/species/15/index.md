@@ -1,7 +1,7 @@
 ---
 id: 15
 scientific_name: "Calidris alba"
-category: "bird"
+category: "wader"
 emoji: "🐦"
 name: "Sanderling"
 ---

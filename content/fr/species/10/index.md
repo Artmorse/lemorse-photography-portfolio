@@ -1,7 +1,7 @@
 ---
 id: 10
 scientific_name: "Arenaria interpres"
-category: "bird"
+category: "wader"
 emoji: "🐦"
 name: "Tournepierre à collier"
 ---

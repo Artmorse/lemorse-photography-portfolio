@@ -1,7 +1,7 @@
 ---
 id: 95
 scientific_name: "Calidris alpina"
-category: "bird"
+category: "wader"
 emoji: "🐦"
 name: "Bécasseau variable"
 ---

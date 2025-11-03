@@ -1,7 +1,7 @@
 ---
 id: 138
 scientific_name: "Actitis hypoleucos"
-category: "bird"
+category: "wader"
 emoji: "🐦"
 name: "Andarríos Chico"
 ---
