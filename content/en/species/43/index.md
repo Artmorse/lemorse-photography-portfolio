@@ -1,7 +1,7 @@
 ---
 id: 43
 scientific_name: "Larus argentatus"
-category: "bird"
+category: "seagull"
 emoji: "🐦"
 name: "European Herring Gull"
 ---

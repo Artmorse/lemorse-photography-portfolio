@@ -1,0 +1,7 @@
+---
+id: 220
+scientific_name: "Cyanistes caeruleus"
+category: "bird"
+emoji: "🐦"
+name: "Eurasian Blue Tit"
+---

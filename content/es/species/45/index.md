@@ -3,5 +3,5 @@ id: 45
 scientific_name: "Lissotriton helveticus"
 category: "amphibian"
 emoji: "🦎"
-name: ""
+name: "Tritón palmeado"
 ---

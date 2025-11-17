@@ -1,7 +1,7 @@
 ---
 id: 21
 scientific_name: "Chroicocephalus ridibundus"
-category: "bird"
+category: "seagull"
 emoji: "🐦"
 name: "Gaviota Reidora"
 ---

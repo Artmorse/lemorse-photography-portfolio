@@ -1,12 +1,12 @@
 ---
 id: 28
-sublocation: "Pic de Mortiers, Réserve naturelle nationale de Faune d’Orlu"
-city: "Orlu"
-department: "Ariège"
-region: "Occitanie"
+sublocation: "Massif du Cézallier"
+city: ""
+department: "Cantal/Haute-Loir/Puy-de-Dôme"
+region: "Auvergne-Rhône-Alpes"
 country: "France"
 latitude: 42.7020333
 longitude: 1.8894592
 country_flag: "🇫🇷"
 ---
-Pic de Mortiers, Réserve naturelle nationale de Faune d’Orlu, Orlu, Ariège, Occitanie, France 🇫🇷
+Massif du Cézallier, Cantal/Haute-Loir/Puy-de-Dôme, Auvergne-Rhône-Alpes, France 🇫🇷

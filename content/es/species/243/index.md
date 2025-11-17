@@ -1,0 +1,7 @@
+---
+id: 243
+scientific_name: "Sarcophaga carnaria"
+category: "fly"
+emoji: "🪰"
+name: "Mosca de la carne"
+---
